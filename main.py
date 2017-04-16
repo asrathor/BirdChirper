@@ -31,7 +31,7 @@ def plot_datapoints(filename_wav):
     a = int(len(ft)/2)
     ft = ft[0:a]
     #spec_c=spectral_centroid(ft)
-    #spec_b=signal_bandwidth(spec_c,ft)
+    #pec_b=signal_bandwidth(spec_c,ft)
     #spec_d=spectral_flatness(ft)
     spec_d = framesplit(signal)
     Time=np.linspace(0,len(signal)/sr,num=len(signal))
@@ -60,12 +60,11 @@ def spectogram(filename_wav):
 
     y, sr = librosa.load(filename_wav)
     S = librosa.feature.melspectrogram(y=y, sr=sr, n_mels=128)
+    print(S.shape)
+    print(sum(S[51]))
     log_S = librosa.logamplitude(S, ref_power=np.max)
-    print(log_S.shape)
     plt.figure(figsize=(12,4))
-    print(log_S[:,0].size)
     new_arr= np.zeros(log_S.shape)
-    print(new_arr.shape)
     for i in range(log_S[0,:].size):
         arr = log_S[:,i]
         arr_max = np.amax(arr)
@@ -119,7 +118,8 @@ def mfcc(filename_wav):
     S = librosa.feature.melspectrogram(y=y, sr=sr, n_mels=130)
     log_S = librosa.logamplitude(S, ref_power=np.max)
     mfc = librosa.feature.mfcc(S=log_S, n_mfcc=13)
-
+    #print("mfc",mfc)
+    #print("mfc flatten",mfc.flatten())
     delta_mfcc = librosa.feature.delta(mfc)
     delta2_mfcc = librosa.feature.delta(mfc, order=2)
 
@@ -142,7 +142,7 @@ def mfcc(filename_wav):
 
     plt.tight_layout()
 
-    plt.show()
+    #plt.show()
     return 0
 
 
@@ -227,24 +227,37 @@ def framesplit(signal):
     framesize = samplesize / 100
     x=0
     avg=0
+    avg_one=0
+    avg_two=0
+    avg_three=0
     while(frames<100):
 
         sig = signal[int(x):int(framesize+x)]
         ft = np.fft.fft(sig)
         ftt = ft[0:int(len(ft/2))]
         sc = spectral_centroid(ftt)
+        bw = signal_bandwidth(sc, ftt)
+        rf = rolloff_freq(ftt)
+        sf= spectral_flatness(ftt)
         avg = avg+sc
-        print("sc",sc)
+        avg_one = avg_one+bw
+        avg_two = avg_two+rf
+        avg_three = avg_three+sf
+        #print("sc",sc)
         x = framesize+x
         frames = frames+1
-
+    print("sum",avg_three)
+    print(ftt.shape)
+    print("avg", (avg_three/100))
     avgg=avg/100
-    print("avg",avgg)
+    #print("avg",avg)
 arr= np.array([])
-for k in range(1,2):
+for k in range(1,101):
     filepath = "Bird Calls/Blue Jays/Blue Jay "+ str(k)+".wav"
     run = plot_datapoints(filepath)
     #arr = np.append(arr,run)
+    mfc = mfcc(filepath)
+    #spec = spectogram(filepath)
 print(arr.shape)
 
 
