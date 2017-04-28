@@ -13,7 +13,7 @@ def file_convert(file):
     #sound = AudioSegment.from_mp3("Surfbird_00002.mp3")
     #sound.export("Surfbird2", format="wav", parameters=["-ac","1"])
     sound = AudioSegment.from_wav(file)
-    sound.export("Mono "+file, format="wav", parameters=["-ac","1"])
+    sound.export("Mono/"+file, format="wav", parameters=["-ac","1"])
 
 def frameFeature(file):
     y, sr = librosa.load(file)
@@ -44,12 +44,11 @@ def frameFeature(file):
     for i in range(0, len(sc)):
         scsum = scsum + sc[i]
     scavg = scsum/len(sc)
-    print("sc avg: ",scavg) # Average Spectral Centroid (totally useless? dependent upon # frames)
     print("sc sum ",scsum) # Sum of Spectral Centroid Frames
 
-#    print("num. sc frames", len(sc))
 
-##### CALCULATE BANDWIDTH #####
+
+
     bw = []
     for i in range(0,len(fty),1):
         bwi = bandwidth(fty[i], sc[i])
@@ -59,9 +58,9 @@ def frameFeature(file):
     for i in range(0,len(bw)):
         bwsum = bwsum + bw[i]
     bwavg = bwsum/len(bw)
-    print("bw avg: ",bwavg) # this value seems useless
+#    print("bw avg: ",bwavg) # this value seems useless
     print("bw sum: ",bwsum)
-
+    exit()
 #    print("num. bw frames", len(bw))
 
 ##### CALCULATE SPECTRAL ROLLOFF #####
@@ -91,7 +90,7 @@ def frameFeature(file):
         srfsum = srfsum + srf[i]
     srfavg = srfsum/len(srf)
     print("srf avg: ",srfavg)
-    print("srf sum: ",srfsum) # this value seems useless
+#    print("srf sum: ",srfsum) # this value seems useless
 
 #    print("num. srf frames", len(srf))
 
@@ -113,7 +112,7 @@ def frameFeature(file):
     for i in range(0,len(ber)):
         bersum = bersum + ber[i]
     beravg = bersum/len(ber)
-    print("ber avg: ",beravg)
+#    print("ber avg: ",beravg)
     print("ber sum: ",bersum)
 
 #    print("num. ber frames", len(ber))
@@ -135,7 +134,7 @@ def frameFeature(file):
         dsmsum = dsmsum + dsm[i]
     dsmavg = dsmsum/len(dsm)
     print("dsm avg: ",dsmavg)
-    print("dsm sum: ",dsmsum)
+#    print("dsm sum: ",dsmsum)
 
 #    print("num. dsm frames", len(dsm))
 
@@ -157,7 +156,7 @@ def frameFeature(file):
         sfsum = sfsum + sf[i]
     sfavg = sfsum/len(sf)
     print("sf avg: ",sfavg)
-    print("sf sum: ",sfsum)
+#    print("sf sum: ",sfsum)
 
 #    print("num. sf frames", len(sf))
 
@@ -181,72 +180,43 @@ def frameFeature(file):
 
 ##### CALCULATE MIN/MAX FREQUENCIES #####
 
-def melspec(file):
+def freqBounds(file):
     y, sr = librosa.load(file)
     fty = fft(y)
     fty = fty[:int(len(fty)/2)]
     spec = librosa.feature.melspectrogram(y=y, sr=sr, n_mels=128)
     log_s = librosa.logamplitude(spec, ref_power=np.max)
+    faxis = np.linspace(0, 12000, num=len(fty), retstep=True)
+
+    print("sr: ", sr)
 
     maxf = 0
     minf = 128
 
     for i in range(0, len(log_s), 1):
         for j in range(0, len(log_s[i]), 1):
-#            if(log_s[i][j] == 0): print(i)
+            if(log_s[i][j] == 0): print(i)
             if(log_s[i][j] > -20 and i > maxf):
                 maxf = i
             if(log_s[i][j] > -20 and i < minf):
                 minf = i
     print("maxf: ", maxf)
     print("minf: ", minf)
-    mels = [math.log(minf,2)*minf, math.log(maxf,2)*maxf]
-    freqs = librosa.mel_to_hz(mels)
-#    freqs = librosa.core.mel_frequencies(13)
 
-    print(freqs)
-
-
-    dfty = np.diff(abs(fty))
+#    dfty = np.diff(abs(fty))
 #    print("minf: ",minf)
+    print(len(y))
     plt.figure()
     plt.subplot(2,1,1)
-    plt.plot(abs(fty))
+    plt.plot(y)
     plt.grid()
     plt.subplot(2,1,2)
-    plt.plot(abs(dfty))
-#    plt.plot(abs(fty2[:int(len(fty)/2)]))
+    plt.plot(faxis[0], abs(fty))
     plt.figure()
     librosa.display.specshow(log_s, sr=sr, x_axis='time', y_axis='mel')
-#    plt.plot(log_s)
-#    plt.plot(mels)
-#    plt.colorbar(format='%+02.0f dB')
+    plt.colorbar(format='%+02.0f dB')
     plt.grid()
     plt.show()
-
-def negSlope(f, i, c): #checks next 10 values and sees if they are all decreasing
-    ret = 1
-    val = f[i]
-    for n in range(i, i+c, 1):
-        if(f[i] <= val):
-            val = f[i]
-        else:
-            ret = 0
-            break
-
-    return ret
-
-def posSlope(f, i, c): #checks next 10 values and sees if they are all inccreasing
-    ret = 1
-    val = f[i]
-    for n in range(i, i+c, 1):
-        if(f[i] >= val):
-            val = f[i]
-        else:
-            ret = 0
-            break
-
-    return ret
 
 def spectralCentroid(fty):
     l = int(len(fty)/2)
@@ -266,18 +236,29 @@ def bandwidth(fty, sc):
         num = num + ((n-sc)**2) * abs(fty[n])
         den = den + abs(fty[n])**2
     bw = (num/den)**(1/2)
+    print("num ",num)
+    print("den ",den)
+
     return bw
 
+def printFFT(file):
+    y, sr = librosa.load(file)
+    fty = fft(y)
+    for n in range(0, len(fty)):
+        print(abs(fty[n]));
+
 def main():
-    #file_convert()
-    for i in range(1,58):
-        #filepath = "American Kestrel/AK"+str(i)+".wav" #92
-        #filepath = "Blue Jays/Blue Jay "+str(i)+".wav" #151
-        #filepath = "Canada Goose/Canada Goose "+str(i)+".wav" #156
-        filepath = "Northern Cardinal/Northern Cardinal "+str(i)+".wav" #58
+    for i in range(1,2):
+        filepath = "American Kestrel/AK"+str(i)+".wav" #92
+        #filepath = "Mono/American Yellow Warbler/AYW"+str(i)+".wav" #101
+        #filepath = "Mono/Blue Jays/Blue Jay "+str(i)+".wav" #151
+        #filepath = "Mono/Canada Goose/Canada Goose "+str(i)+".wav" #156
+        #filepath = "Mono/Northern Cardinal/Northern Cardinal "+str(i)+".wav" #58
         print(filepath)
-        frameFeature(filepath)
-        #melspec(filepath)
+        #file_convert(filepath)
+        freqBounds(filepath)
+        #frameFeature(filepath)
+        #printFFT(filepath)
     sys.exit(0)
 
 main()
