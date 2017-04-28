@@ -1,0 +1,685 @@
+numfiles 57
+NC/NC1.wav
+GPU Device 0: "GeForce GTX 980 Ti" with compute capability 5.2
+
+Spectral Centroid Sum: 4178.94
+Bandwidth: 2368.02
+SRF avg: 46.7451
+DSM avg: 1.05157e+11
+SF avg: -85.8616
+ZCR: 0.0964833
+Min. Freq. at -15 dB: 7.45604
+Min. Freq. at -15 dB: 14489.6
+
+NC/NC2.wav
+GPU Device 0: "GeForce GTX 980 Ti" with compute capability 5.2
+
+Spectral Centroid Sum: 3541.68
+Bandwidth: 1881.38
+SRF avg: 65.2143
+DSM avg: 1.2416e+11
+SF avg: -85.9105
+ZCR: 0.122811
+Min. Freq. at -15 dB: 8.94705
+Min. Freq. at -15 dB: 14840.2
+
+NC/NC3.wav
+GPU Device 0: "GeForce GTX 980 Ti" with compute capability 5.2
+
+Spectral Centroid Sum: 3206.13
+Bandwidth: 1732.83
+SRF avg: 98.8947
+DSM avg: 1.10592e+11
+SF avg: -85.7338
+ZCR: 0.12144
+Min. Freq. at -15 dB: 9.94214
+Min. Freq. at -15 dB: 13216.4
+
+NC/NC4.wav
+GPU Device 0: "GeForce GTX 980 Ti" with compute capability 5.2
+
+Spectral Centroid Sum: 286932
+Bandwidth: 166330
+SRF avg: 51.0862
+DSM avg: 2.5587e+12
+SF avg: -96.511
+ZCR: 0.0563139
+Min. Freq. at -15 dB: 8.76088
+Min. Freq. at -15 dB: 13066.7
+
+NC/NC5.wav
+GPU Device 0: "GeForce GTX 980 Ti" with compute capability 5.2
+
+Spectral Centroid Sum: 2904.74
+Bandwidth: 1582.83
+SRF avg: 82.8333
+DSM avg: 1.09376e+11
+SF avg: -87.9172
+ZCR: 0.124443
+Min. Freq. at -15 dB: 7.01782
+Min. Freq. at -15 dB: 14776
+
+NC/NC6.wav
+GPU Device 0: "GeForce GTX 980 Ti" with compute capability 5.2
+
+Spectral Centroid Sum: 2485.21
+Bandwidth: 1315.69
+SRF avg: 48.6667
+DSM avg: 1.22545e+11
+SF avg: -87.394
+ZCR: 0.134963
+Min. Freq. at -15 dB: 8.52092
+Min. Freq. at -15 dB: 14204.4
+
+NC/NC7.wav
+GPU Device 0: "GeForce GTX 980 Ti" with compute capability 5.2
+
+Spectral Centroid Sum: 3328.83
+Bandwidth: 1849.72
+SRF avg: 92.325
+DSM avg: 1.27523e+11
+SF avg: -87.0201
+ZCR: 0.110842
+Min. Freq. at -15 dB: 0
+Min. Freq. at -15 dB: 13185.7
+
+NC/NC8.wav
+GPU Device 0: "GeForce GTX 980 Ti" with compute capability 5.2
+
+Spectral Centroid Sum: 2311.41
+Bandwidth: 1188.2
+SRF avg: 52.9286
+DSM avg: 1.37326e+11
+SF avg: -89.6968
+ZCR: 0.148252
+Min. Freq. at -15 dB: 22.9401
+Min. Freq. at -15 dB: 14727.5
+
+NC/NC9.wav
+GPU Device 0: "GeForce GTX 980 Ti" with compute capability 5.2
+
+Spectral Centroid Sum: 2969.71
+Bandwidth: 1585.91
+SRF avg: 118.056
+DSM avg: 1.35134e+11
+SF avg: -88.3633
+ZCR: 0.113383
+Min. Freq. at -15 dB: 17.5446
+Min. Freq. at -15 dB: 14365.5
+
+NC/NC10.wav
+GPU Device 0: "GeForce GTX 980 Ti" with compute capability 5.2
+
+Spectral Centroid Sum: 2291.51
+Bandwidth: 1199.52
+SRF avg: 98.1429
+DSM avg: 1.4539e+11
+SF avg: -87.6867
+ZCR: 0.151805
+Min. Freq. at -15 dB: 13.7655
+Min. Freq. at -15 dB: 14196.8
+
+NC/NC11.wav
+GPU Device 0: "GeForce GTX 980 Ti" with compute capability 5.2
+
+Spectral Centroid Sum: 2615.56
+Bandwidth: 1429.45
+SRF avg: 43
+DSM avg: 1.15247e+11
+SF avg: -85.9465
+ZCR: 0.11587
+Min. Freq. at -15 dB: 3.97656
+Min. Freq. at -15 dB: 12387
+
+NC/NC12.wav
+GPU Device 0: "GeForce GTX 980 Ti" with compute capability 5.2
+
+Spectral Centroid Sum: 2804.5
+Bandwidth: 1536.7
+SRF avg: 122.471
+DSM avg: 1.43316e+11
+SF avg: -87.8397
+ZCR: 0.13357
+Min. Freq. at -15 dB: 0
+Min. Freq. at -15 dB: 13574.1
+
+NC/NC13.wav
+GPU Device 0: "GeForce GTX 980 Ti" with compute capability 5.2
+
+Spectral Centroid Sum: 2402.41
+Bandwidth: 1264.15
+SRF avg: 47.3667
+DSM avg: 1.38892e+11
+SF avg: -86.2532
+ZCR: 0.134493
+Min. Freq. at -15 dB: 0
+Min. Freq. at -15 dB: 13008.4
+
+NC/NC14.wav
+GPU Device 0: "GeForce GTX 980 Ti" with compute capability 5.2
+
+Spectral Centroid Sum: 3021.52
+Bandwidth: 1642.04
+SRF avg: 68.5556
+DSM avg: 1.549e+11
+SF avg: -89.0222
+ZCR: 0.135344
+Min. Freq. at -15 dB: 45.6159
+Min. Freq. at -15 dB: 14916.4
+
+NC/NC15.wav
+GPU Device 0: "GeForce GTX 980 Ti" with compute capability 5.2
+
+Spectral Centroid Sum: 3605.51
+Bandwidth: 1931.85
+SRF avg: 113.714
+DSM avg: 1.1584e+11
+SF avg: -86.759
+ZCR: 0.100095
+Min. Freq. at -15 dB: 2.98255
+Min. Freq. at -15 dB: 14918.7
+
+NC/NC16.wav
+GPU Device 0: "GeForce GTX 980 Ti" with compute capability 5.2
+
+Spectral Centroid Sum: 2684.92
+Bandwidth: 1376.67
+SRF avg: 106.094
+DSM avg: 1.39502e+11
+SF avg: -88.4186
+ZCR: 0.147971
+Min. Freq. at -15 dB: 35.789
+Min. Freq. at -15 dB: 14359.3
+
+NC/NC17.wav
+GPU Device 0: "GeForce GTX 980 Ti" with compute capability 5.2
+
+Spectral Centroid Sum: 4260.89
+Bandwidth: 2327.8
+SRF avg: 45.7647
+DSM avg: 1.32764e+11
+SF avg: -89.2162
+ZCR: 0.0927638
+Min. Freq. at -15 dB: 4.97069
+Min. Freq. at -15 dB: 14439.9
+
+NC/NC18.wav
+GPU Device 0: "GeForce GTX 980 Ti" with compute capability 5.2
+
+Spectral Centroid Sum: 3797.17
+Bandwidth: 2161.81
+SRF avg: 63.9787
+DSM avg: 1.17048e+11
+SF avg: -85.8145
+ZCR: 0.106363
+Min. Freq. at -15 dB: 0
+Min. Freq. at -15 dB: 14088.1
+
+NC/NC19.wav
+GPU Device 0: "GeForce GTX 980 Ti" with compute capability 5.2
+
+Spectral Centroid Sum: 3119.05
+Bandwidth: 1564.47
+SRF avg: 107.056
+DSM avg: 1.26622e+11
+SF avg: -86.3173
+ZCR: 0.127775
+Min. Freq. at -15 dB: 0
+Min. Freq. at -15 dB: 12206.5
+
+NC/NC20.wav
+GPU Device 0: "GeForce GTX 980 Ti" with compute capability 5.2
+
+Spectral Centroid Sum: 4828.9
+Bandwidth: 2671.4
+SRF avg: 45.0175
+DSM avg: 1.26419e+11
+SF avg: -87.0129
+ZCR: 0.0774471
+Min. Freq. at -15 dB: 2.2092
+Min. Freq. at -15 dB: 14532.1
+
+NC/NC21.wav
+GPU Device 0: "GeForce GTX 980 Ti" with compute capability 5.2
+
+Spectral Centroid Sum: 2966.22
+Bandwidth: 1582.79
+SRF avg: 53.3333
+DSM avg: 1.17889e+11
+SF avg: -86.0194
+ZCR: 0.114815
+Min. Freq. at -15 dB: 0
+Min. Freq. at -15 dB: 14660.2
+
+NC/NC22.wav
+GPU Device 0: "GeForce GTX 980 Ti" with compute capability 5.2
+
+Spectral Centroid Sum: 4525.52
+Bandwidth: 2437.79
+SRF avg: 119.472
+DSM avg: 1.19818e+11
+SF avg: -86.6094
+ZCR: 0.0880809
+Min. Freq. at -15 dB: 14.3159
+Min. Freq. at -15 dB: 14800.2
+
+NC/NC23.wav
+GPU Device 0: "GeForce GTX 980 Ti" with compute capability 5.2
+
+Spectral Centroid Sum: 3574.74
+Bandwidth: 1916.56
+SRF avg: 44.9048
+DSM avg: 1.08134e+11
+SF avg: -86.3797
+ZCR: 0.0987421
+Min. Freq. at -15 dB: 11.9302
+Min. Freq. at -15 dB: 14250.6
+
+NC/NC24.wav
+GPU Device 0: "GeForce GTX 980 Ti" with compute capability 5.2
+
+Spectral Centroid Sum: 3888.82
+Bandwidth: 2214.04
+SRF avg: 54.186
+DSM avg: 1.72038e+11
+SF avg: -90.7814
+ZCR: 0.187913
+Min. Freq. at -15 dB: 29.6608
+Min. Freq. at -15 dB: 15118.1
+
+NC/NC25.wav
+GPU Device 0: "GeForce GTX 980 Ti" with compute capability 5.2
+
+Spectral Centroid Sum: 3679.91
+Bandwidth: 2027.98
+SRF avg: 90.95
+DSM avg: 1.80905e+11
+SF avg: -91.1038
+ZCR: 0.16021
+Min. Freq. at -15 dB: 25.2134
+Min. Freq. at -15 dB: 15348.7
+
+NC/NC26.wav
+GPU Device 0: "GeForce GTX 980 Ti" with compute capability 5.2
+
+Spectral Centroid Sum: 4162.31
+Bandwidth: 2335.69
+SRF avg: 48.9778
+DSM avg: 2.0033e+11
+SF avg: -90.7582
+ZCR: 0.11696
+Min. Freq. at -15 dB: 28.0145
+Min. Freq. at -15 dB: 15161.4
+
+NC/NC27.wav
+GPU Device 0: "GeForce GTX 980 Ti" with compute capability 5.2
+
+Spectral Centroid Sum: 4338.56
+Bandwidth: 2445.1
+SRF avg: 63.9583
+DSM avg: 2.13108e+11
+SF avg: -91.0183
+ZCR: 0.113237
+Min. Freq. at -15 dB: 29.1939
+Min. Freq. at -15 dB: 15162.2
+
+NC/NC28.wav
+GPU Device 0: "GeForce GTX 980 Ti" with compute capability 5.2
+
+Spectral Centroid Sum: 3462.16
+Bandwidth: 1870.05
+SRF avg: 116.737
+DSM avg: 1.7827e+11
+SF avg: -89.989
+ZCR: 0.167869
+Min. Freq. at -15 dB: 47.0621
+Min. Freq. at -15 dB: 15022.9
+
+NC/NC29.wav
+GPU Device 0: "GeForce GTX 980 Ti" with compute capability 5.2
+
+Spectral Centroid Sum: 2961.54
+Bandwidth: 1663.54
+SRF avg: 80.5758
+DSM avg: 2.20495e+11
+SF avg: -89.6387
+ZCR: 0.201455
+Min. Freq. at -15 dB: 27.1515
+Min. Freq. at -15 dB: 14828.6
+
+NC/NC30.wav
+GPU Device 0: "GeForce GTX 980 Ti" with compute capability 5.2
+
+Spectral Centroid Sum: 3920.26
+Bandwidth: 2220.52
+SRF avg: 73.1628
+DSM avg: 1.60076e+11
+SF avg: -88.7514
+ZCR: 0.16398
+Min. Freq. at -15 dB: 17.7877
+Min. Freq. at -15 dB: 17476.4
+
+NC/NC31.wav
+GPU Device 0: "GeForce GTX 980 Ti" with compute capability 5.2
+
+Spectral Centroid Sum: 4283.18
+Bandwidth: 2453.02
+SRF avg: 67.8723
+DSM avg: 1.82727e+11
+SF avg: -89.134
+ZCR: 0.148737
+Min. Freq. at -15 dB: 24.256
+Min. Freq. at -15 dB: 7683.77
+
+NC/NC32.wav
+GPU Device 0: "GeForce GTX 980 Ti" with compute capability 5.2
+
+Spectral Centroid Sum: 5487.87
+Bandwidth: 3126.79
+SRF avg: 97.1167
+DSM avg: 1.6717e+11
+SF avg: -89.7066
+ZCR: 0.148586
+Min. Freq. at -15 dB: 19.0585
+Min. Freq. at -15 dB: 16140.5
+
+NC/NC33.wav
+GPU Device 0: "GeForce GTX 980 Ti" with compute capability 5.2
+
+Spectral Centroid Sum: 4741.37
+Bandwidth: 2716.82
+SRF avg: 61.098
+DSM avg: 1.69338e+11
+SF avg: -89.3646
+ZCR: 0.163879
+Min. Freq. at -15 dB: 14.8232
+Min. Freq. at -15 dB: 16142.5
+
+NC/NC34.wav
+GPU Device 0: "GeForce GTX 980 Ti" with compute capability 5.2
+
+Spectral Centroid Sum: 4265.94
+Bandwidth: 2449.13
+SRF avg: 79.617
+DSM avg: 1.73661e+11
+SF avg: -89.7503
+ZCR: 0.159742
+Min. Freq. at -15 dB: 18.8658
+Min. Freq. at -15 dB: 14470.1
+
+NC/NC35.wav
+GPU Device 0: "GeForce GTX 980 Ti" with compute capability 5.2
+
+Spectral Centroid Sum: 5492.35
+Bandwidth: 3110
+SRF avg: 64.4333
+DSM avg: 1.67569e+11
+SF avg: -89.8093
+ZCR: 0.157711
+Min. Freq. at -15 dB: 21.1752
+Min. Freq. at -15 dB: 17696.1
+
+NC/NC36.wav
+GPU Device 0: "GeForce GTX 980 Ti" with compute capability 5.2
+
+Spectral Centroid Sum: 6406.25
+Bandwidth: 3569.11
+SRF avg: 63.7059
+DSM avg: 1.79711e+11
+SF avg: -90.7279
+ZCR: 0.171273
+Min. Freq. at -15 dB: 14.8228
+Min. Freq. at -15 dB: 18928.7
+
+NC/NC37.wav
+GPU Device 0: "GeForce GTX 980 Ti" with compute capability 5.2
+
+Spectral Centroid Sum: 6664.83
+Bandwidth: 3809.86
+SRF avg: 66.875
+DSM avg: 1.96458e+11
+SF avg: -90.6679
+ZCR: 0.153933
+Min. Freq. at -15 dB: 19.1826
+Min. Freq. at -15 dB: 16143
+
+NC/NC38.wav
+GPU Device 0: "GeForce GTX 980 Ti" with compute capability 5.2
+
+Spectral Centroid Sum: 5128.87
+Bandwidth: 2902.05
+SRF avg: 68.8
+DSM avg: 1.75858e+11
+SF avg: -89.8671
+ZCR: 0.160815
+Min. Freq. at -15 dB: 15.9628
+Min. Freq. at -15 dB: 16142.9
+
+NC/NC39.wav
+GPU Device 0: "GeForce GTX 980 Ti" with compute capability 5.2
+
+Spectral Centroid Sum: 9821.81
+Bandwidth: 5411.41
+SRF avg: 66.2679
+DSM avg: 2.646e+11
+SF avg: -88.0113
+ZCR: 0.164515
+Min. Freq. at -15 dB: 1609.64
+Min. Freq. at -15 dB: 7420.66
+
+NC/NC40.wav
+GPU Device 0: "GeForce GTX 980 Ti" with compute capability 5.2
+
+Spectral Centroid Sum: 9149.4
+Bandwidth: 4892.48
+SRF avg: 71.7087
+DSM avg: 1.85354e+11
+SF avg: -86.4884
+ZCR: 0.166298
+Min. Freq. at -15 dB: 1693.62
+Min. Freq. at -15 dB: 5987.38
+
+NC/NC41.wav
+GPU Device 0: "GeForce GTX 980 Ti" with compute capability 5.2
+
+Spectral Centroid Sum: 8790.86
+Bandwidth: 4954.25
+SRF avg: 51.0194
+DSM avg: 4.3934e+11
+SF avg: -87.9691
+ZCR: 0.152125
+Min. Freq. at -15 dB: 1540.1
+Min. Freq. at -15 dB: 7363
+
+NC/NC42.wav
+GPU Device 0: "GeForce GTX 980 Ti" with compute capability 5.2
+
+Spectral Centroid Sum: 9140.12
+Bandwidth: 5011.77
+SRF avg: 54.819
+DSM avg: 6.5888e+11
+SF avg: -88.66
+ZCR: 0.146304
+Min. Freq. at -15 dB: 1548.96
+Min. Freq. at -15 dB: 7935.15
+
+NC/NC43.wav
+GPU Device 0: "GeForce GTX 980 Ti" with compute capability 5.2
+
+Spectral Centroid Sum: 8755.92
+Bandwidth: 4759.53
+SRF avg: 70.9604
+DSM avg: 2.53504e+11
+SF avg: -87.4378
+ZCR: 0.160801
+Min. Freq. at -15 dB: 1638.85
+Min. Freq. at -15 dB: 6443.73
+
+NC/NC44.wav
+GPU Device 0: "GeForce GTX 980 Ti" with compute capability 5.2
+
+Spectral Centroid Sum: 9350.59
+Bandwidth: 5157.56
+SRF avg: 47.5138
+DSM avg: 7.64201e+11
+SF avg: -89.3633
+ZCR: 0.145229
+Min. Freq. at -15 dB: 1551.99
+Min. Freq. at -15 dB: 6997.85
+
+NC/NC45.wav
+GPU Device 0: "GeForce GTX 980 Ti" with compute capability 5.2
+
+Spectral Centroid Sum: 10721.2
+Bandwidth: 6002.68
+SRF avg: 65.1626
+DSM avg: 7.82278e+11
+SF avg: -89.8923
+ZCR: 0.157399
+Min. Freq. at -15 dB: 1553.03
+Min. Freq. at -15 dB: 8136.87
+
+NC/NC46.wav
+GPU Device 0: "GeForce GTX 980 Ti" with compute capability 5.2
+
+Spectral Centroid Sum: 9825.28
+Bandwidth: 5399.38
+SRF avg: 63.9464
+DSM avg: 2.61916e+11
+SF avg: -87.5449
+ZCR: 0.160503
+Min. Freq. at -15 dB: 1540.25
+Min. Freq. at -15 dB: 6298.56
+
+NC/NC47.wav
+GPU Device 0: "GeForce GTX 980 Ti" with compute capability 5.2
+
+Spectral Centroid Sum: 9686.67
+Bandwidth: 5347.98
+SRF avg: 50.7321
+DSM avg: 6.86667e+11
+SF avg: -89.2702
+ZCR: 0.147771
+Min. Freq. at -15 dB: 1546.96
+Min. Freq. at -15 dB: 7415.99
+
+NC/NC48.wav
+GPU Device 0: "GeForce GTX 980 Ti" with compute capability 5.2
+
+Spectral Centroid Sum: 10820.3
+Bandwidth: 5996.89
+SRF avg: 76.3333
+DSM avg: 8.53788e+11
+SF avg: -90.5442
+ZCR: 0.15447
+Min. Freq. at -15 dB: 1537.79
+Min. Freq. at -15 dB: 8404.9
+
+NC/NC49.wav
+GPU Device 0: "GeForce GTX 980 Ti" with compute capability 5.2
+
+Spectral Centroid Sum: 13797.5
+Bandwidth: 7777.85
+SRF avg: 53.7375
+DSM avg: 9.42366e+10
+SF avg: -90.5176
+ZCR: 0.116231
+Min. Freq. at -15 dB: 51.0771
+Min. Freq. at -15 dB: 15866.1
+
+NC/NC50.wav
+GPU Device 0: "GeForce GTX 980 Ti" with compute capability 5.2
+
+Spectral Centroid Sum: 8434.62
+Bandwidth: 4662.96
+SRF avg: 74.4583
+DSM avg: 9.81844e+10
+SF avg: -90.6186
+ZCR: 0.147002
+Min. Freq. at -15 dB: 78.5793
+Min. Freq. at -15 dB: 15786.6
+
+NC/NC51.wav
+GPU Device 0: "GeForce GTX 980 Ti" with compute capability 5.2
+
+Spectral Centroid Sum: 7634.9
+Bandwidth: 4017.27
+SRF avg: 70.3294
+DSM avg: 1.06283e+11
+SF avg: -90.1972
+ZCR: 0.161338
+Min. Freq. at -15 dB: 91.3501
+Min. Freq. at -15 dB: 14763.4
+
+NC/NC52.wav
+GPU Device 0: "GeForce GTX 980 Ti" with compute capability 5.2
+
+Spectral Centroid Sum: 9308.37
+Bandwidth: 5087.08
+SRF avg: 61.1215
+DSM avg: 1.02066e+11
+SF avg: -90.404
+ZCR: 0.13658
+Min. Freq. at -15 dB: 70.7222
+Min. Freq. at -15 dB: 16150.6
+
+NC/NC53.wav
+GPU Device 0: "GeForce GTX 980 Ti" with compute capability 5.2
+
+Spectral Centroid Sum: 9067.53
+Bandwidth: 5061.54
+SRF avg: 75.514
+DSM avg: 8.79737e+10
+SF avg: -89.2012
+ZCR: 0.147645
+Min. Freq. at -15 dB: 68.3648
+Min. Freq. at -15 dB: 14049
+
+NC/NC54.wav
+GPU Device 0: "GeForce GTX 980 Ti" with compute capability 5.2
+
+Spectral Centroid Sum: 12146.5
+Bandwidth: 6700.26
+SRF avg: 59
+DSM avg: 9.95388e+10
+SF avg: -91.0687
+ZCR: 0.123093
+Min. Freq. at -15 dB: 76.1627
+Min. Freq. at -15 dB: 15619.7
+
+NC/NC55.wav
+GPU Device 0: "GeForce GTX 980 Ti" with compute capability 5.2
+
+Spectral Centroid Sum: 5259.64
+Bandwidth: 2925.79
+SRF avg: 59.3607
+DSM avg: 1.0542e+11
+SF avg: -90.5173
+ZCR: 0.172268
+Min. Freq. at -15 dB: 71.7473
+Min. Freq. at -15 dB: 15370.3
+
+NC/NC56.wav
+GPU Device 0: "GeForce GTX 980 Ti" with compute capability 5.2
+
+Spectral Centroid Sum: 6947.09
+Bandwidth: 3765.73
+SRF avg: 61.8375
+DSM avg: 9.34017e+10
+SF avg: -91.4911
+ZCR: 0.168419
+Min. Freq. at -15 dB: 92.723
+Min. Freq. at -15 dB: 15555.5
+
+NC/NC57.wav
+GPU Device 0: "GeForce GTX 980 Ti" with compute capability 5.2
+
+Spectral Centroid Sum: 7187.99
+Bandwidth: 3646.12
+SRF avg: 53.4578
+DSM avg: 9.29232e+10
+SF avg: -93.0446
+ZCR: 0.162298
+Min. Freq. at -15 dB: 101.9
+Min. Freq. at -15 dB: 20037.8
+
