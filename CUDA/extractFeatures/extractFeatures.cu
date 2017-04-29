@@ -26,7 +26,6 @@ typedef float2 Complex;
 // declaration, forward
 void extractFeatures(int argc, char **argv, const char* filename);
 float absComplex(Complex n);
-Complex complexMul(Complex a, Complex b);
 
 ////////////////////////////////////////////////////////////////////////////////
 // Program main
