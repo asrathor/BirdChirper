@@ -119,6 +119,7 @@ void extractFeatures(int argc, char **argv, const char* filename){
     float fft_signal_size, signal_time, frame_length, num_frames;
     int frame_size;
     fft_signal_size = signal_size/2;
+    float freq = static_cast<float>(sr)/static_cast<float>(signal_size); // frequency per index of array
     signal_time = static_cast<float>(signal_size) / static_cast<float>(sr);
     frame_length = 0.004; // vary this value
     num_frames = signal_time/(2*frame_length);
@@ -236,7 +237,6 @@ void extractFeatures(int argc, char **argv, const char* filename){
         maxf = i;
       }
     }
-    float freq = static_cast<float>(sr)/static_cast<float>(signal_size);
     minf = minf*freq;
     maxf = maxf*freq;
 
