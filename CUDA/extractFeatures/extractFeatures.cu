@@ -14,9 +14,6 @@
 #include <helper_functions.h>
 #include <helper_cuda.h>
 
-//#include <arrayfire.h>
-//#include <af/defines.h>
-//#include <af/seq.h>
 #include <sndfile.h>
 
 // Complex data type
