@@ -1,0 +1,504 @@
+NC/NC1.wav
+Spectral Centroid Sum: 4178.94
+Bandwidth: 2368.02
+SRF avg: 46.7451
+SF avg: -85.8616
+ZCR: 0.0964833
+Min. Freq. at -10 dB: 300.727
+Max. Freq. at -10 dB: 7403.85
+
+NC/NC2.wav
+Spectral Centroid Sum: 3541.68
+Bandwidth: 1881.38
+SRF avg: 65.2143
+SF avg: -85.9105
+ZCR: 0.122811
+Min. Freq. at -10 dB: 304.2
+Max. Freq. at -10 dB: 7599.03
+
+NC/NC3.wav
+Spectral Centroid Sum: 3206.13
+Bandwidth: 1732.83
+SRF avg: 98.8947
+SF avg: -85.7338
+ZCR: 0.12144
+Min. Freq. at -10 dB: 301.578
+Max. Freq. at -10 dB: 12083
+
+NC/NC4.wav
+Spectral Centroid Sum: 286932
+Bandwidth: 166330
+SRF avg: 51.0862
+SF avg: -96.511
+ZCR: 0.0563139
+Min. Freq. at -10 dB: 308.878
+Max. Freq. at -10 dB: 7548.8
+
+NC/NC5.wav
+Spectral Centroid Sum: 2904.74
+Bandwidth: 1582.83
+SRF avg: 82.8333
+SF avg: -87.9172
+ZCR: 0.124443
+Min. Freq. at -10 dB: 315.802
+Max. Freq. at -10 dB: 7586.27
+
+NC/NC6.wav
+Spectral Centroid Sum: 2485.21
+Bandwidth: 1315.69
+SRF avg: 48.6667
+SF avg: -87.394
+ZCR: 0.134963
+Min. Freq. at -10 dB: 315.274
+Max. Freq. at -10 dB: 13373.6
+
+NC/NC7.wav
+Spectral Centroid Sum: 3328.83
+Bandwidth: 1849.72
+SRF avg: 92.325
+SF avg: -87.0201
+ZCR: 0.110842
+Min. Freq. at -10 dB: 298.249
+Max. Freq. at -10 dB: 7465.64
+
+NC/NC8.wav
+Spectral Centroid Sum: 2311.41
+Bandwidth: 1188.2
+SRF avg: 52.9286
+SF avg: -89.6968
+ZCR: 0.148252
+Min. Freq. at -10 dB: 5702.9
+Max. Freq. at -10 dB: 13071.3
+
+NC/NC9.wav
+Spectral Centroid Sum: 2969.71
+Bandwidth: 1585.91
+SRF avg: 118.056
+SF avg: -88.3633
+ZCR: 0.113383
+Min. Freq. at -10 dB: 312.293
+Max. Freq. at -10 dB: 7610.83
+
+NC/NC10.wav
+Spectral Centroid Sum: 2291.51
+Bandwidth: 1199.52
+SRF avg: 98.1429
+SF avg: -87.6867
+ZCR: 0.151805
+Min. Freq. at -10 dB: 298.252
+Max. Freq. at -10 dB: 13210.3
+
+NC/NC11.wav
+Spectral Centroid Sum: 2615.56
+Bandwidth: 1429.45
+SRF avg: 43
+SF avg: -85.9465
+ZCR: 0.11587
+Min. Freq. at -10 dB: 302.218
+Max. Freq. at -10 dB: 7543.53
+
+NC/NC12.wav
+Spectral Centroid Sum: 2804.5
+Bandwidth: 1536.7
+SRF avg: 122.471
+SF avg: -87.8397
+ZCR: 0.13357
+Min. Freq. at -10 dB: 298.25
+Max. Freq. at -10 dB: 13253.5
+
+NC/NC13.wav
+Spectral Centroid Sum: 2402.41
+Bandwidth: 1264.15
+SRF avg: 47.3667
+SF avg: -86.2532
+ZCR: 0.134493
+Min. Freq. at -10 dB: 298.261
+Max. Freq. at -10 dB: 7375.56
+
+NC/NC14.wav
+Spectral Centroid Sum: 3021.52
+Bandwidth: 1642.04
+SRF avg: 68.5556
+SF avg: -89.0222
+ZCR: 0.135344
+Min. Freq. at -10 dB: 417.56
+Max. Freq. at -10 dB: 7603.81
+
+NC/NC15.wav
+Spectral Centroid Sum: 3605.51
+Bandwidth: 1931.85
+SRF avg: 113.714
+SF avg: -86.759
+ZCR: 0.100095
+Min. Freq. at -10 dB: 304.22
+Max. Freq. at -10 dB: 7689.02
+
+NC/NC16.wav
+Spectral Centroid Sum: 2684.92
+Bandwidth: 1376.67
+SRF avg: 106.094
+SF avg: -88.4186
+ZCR: 0.147971
+Min. Freq. at -10 dB: 5678.52
+Max. Freq. at -10 dB: 7308.91
+
+NC/NC17.wav
+Spectral Centroid Sum: 4260.89
+Bandwidth: 2327.8
+SRF avg: 45.7647
+SF avg: -89.2162
+ZCR: 0.0927638
+Min. Freq. at -10 dB: 298.242
+Max. Freq. at -10 dB: 14313.1
+
+NC/NC18.wav
+Spectral Centroid Sum: 3797.17
+Bandwidth: 2161.81
+SRF avg: 63.9787
+SF avg: -85.8145
+ZCR: 0.106363
+Min. Freq. at -10 dB: 303.67
+Max. Freq. at -10 dB: 7355.87
+
+NC/NC19.wav
+Spectral Centroid Sum: 3119.05
+Bandwidth: 1564.47
+SRF avg: 107.056
+SF avg: -86.3173
+ZCR: 0.127775
+Min. Freq. at -10 dB: 298.234
+Max. Freq. at -10 dB: 7326.02
+
+NC/NC20.wav
+Spectral Centroid Sum: 4828.9
+Bandwidth: 2671.4
+SRF avg: 45.0175
+SF avg: -87.0129
+ZCR: 0.0774471
+Min. Freq. at -10 dB: 298.242
+Max. Freq. at -10 dB: 7460.46
+
+NC/NC21.wav
+Spectral Centroid Sum: 2966.22
+Bandwidth: 1582.79
+SRF avg: 53.3333
+SF avg: -86.0194
+ZCR: 0.114815
+Min. Freq. at -10 dB: 298.257
+Max. Freq. at -10 dB: 7666.97
+
+NC/NC22.wav
+Spectral Centroid Sum: 4525.52
+Bandwidth: 2437.79
+SRF avg: 119.472
+SF avg: -86.6094
+ZCR: 0.0880809
+Min. Freq. at -10 dB: 300.633
+Max. Freq. at -10 dB: 7596.95
+
+NC/NC23.wav
+Spectral Centroid Sum: 3574.74
+Bandwidth: 1916.56
+SRF avg: 44.9048
+SF avg: -86.3797
+ZCR: 0.0987421
+Min. Freq. at -10 dB: 301.238
+Max. Freq. at -10 dB: 7375.85
+
+NC/NC24.wav
+Spectral Centroid Sum: 3888.82
+Bandwidth: 2214.04
+SRF avg: 54.186
+SF avg: -90.7814
+ZCR: 0.187913
+Min. Freq. at -10 dB: 329.234
+Max. Freq. at -10 dB: 8201.2
+
+NC/NC25.wav
+Spectral Centroid Sum: 3679.91
+Bandwidth: 2027.98
+SRF avg: 90.95
+SF avg: -91.1038
+ZCR: 0.16021
+Min. Freq. at -10 dB: 305.712
+Max. Freq. at -10 dB: 14699.4
+
+NC/NC26.wav
+Spectral Centroid Sum: 4162.31
+Bandwidth: 2335.69
+SRF avg: 48.9778
+SF avg: -90.7582
+ZCR: 0.11696
+Min. Freq. at -10 dB: 299.755
+Max. Freq. at -10 dB: 8110.19
+
+NC/NC27.wav
+Spectral Centroid Sum: 4338.56
+Bandwidth: 2445.1
+SRF avg: 63.9583
+SF avg: -91.0183
+ZCR: 0.113237
+Min. Freq. at -10 dB: 299.9
+Max. Freq. at -10 dB: 8222.05
+
+NC/NC28.wav
+Spectral Centroid Sum: 3462.16
+Bandwidth: 1870.05
+SRF avg: 116.737
+SF avg: -89.989
+ZCR: 0.167869
+Min. Freq. at -10 dB: 299.181
+Max. Freq. at -10 dB: 8114.85
+
+NC/NC29.wav
+Spectral Centroid Sum: 2961.54
+Bandwidth: 1663.54
+SRF avg: 80.5758
+SF avg: -89.6387
+ZCR: 0.201455
+Min. Freq. at -10 dB: 298.667
+Max. Freq. at -10 dB: 8327.76
+
+NC/NC30.wav
+Spectral Centroid Sum: 3920.26
+Bandwidth: 2220.52
+SRF avg: 73.1628
+SF avg: -88.7514
+ZCR: 0.16398
+Min. Freq. at -10 dB: 302.39
+Max. Freq. at -10 dB: 7992.59
+
+NC/NC31.wav
+Spectral Centroid Sum: 4283.18
+Bandwidth: 2453.02
+SRF avg: 67.8723
+SF avg: -89.134
+ZCR: 0.148737
+Min. Freq. at -10 dB: 299.158
+Max. Freq. at -10 dB: 7637.96
+
+NC/NC32.wav
+Spectral Centroid Sum: 5487.87
+Bandwidth: 3126.79
+SRF avg: 97.1167
+SF avg: -89.7066
+ZCR: 0.148586
+Min. Freq. at -10 dB: 298.584
+Max. Freq. at -10 dB: 7441.3
+
+NC/NC33.wav
+Spectral Centroid Sum: 4741.37
+Bandwidth: 2716.82
+SRF avg: 61.098
+SF avg: -89.3646
+ZCR: 0.163879
+Min. Freq. at -10 dB: 298.935
+Max. Freq. at -10 dB: 7537.6
+
+NC/NC34.wav
+Spectral Centroid Sum: 4265.94
+Bandwidth: 2449.13
+SRF avg: 79.617
+SF avg: -89.7503
+ZCR: 0.159742
+Min. Freq. at -10 dB: 299.158
+Max. Freq. at -10 dB: 14006.5
+
+NC/NC35.wav
+Spectral Centroid Sum: 5492.35
+Bandwidth: 3110
+SRF avg: 64.4333
+SF avg: -89.8093
+ZCR: 0.157711
+Min. Freq. at -10 dB: 298.571
+Max. Freq. at -10 dB: 14644.8
+
+NC/NC36.wav
+Spectral Centroid Sum: 6406.25
+Bandwidth: 3569.11
+SRF avg: 63.7059
+SF avg: -90.7279
+ZCR: 0.171273
+Min. Freq. at -10 dB: 300.162
+Max. Freq. at -10 dB: 14500.4
+
+NC/NC37.wav
+Spectral Centroid Sum: 6664.83
+Bandwidth: 3809.86
+SRF avg: 66.875
+SF avg: -90.6679
+ZCR: 0.153933
+Min. Freq. at -10 dB: 301.689
+Max. Freq. at -10 dB: 7901.47
+
+NC/NC38.wav
+Spectral Centroid Sum: 5128.87
+Bandwidth: 2902.05
+SRF avg: 68.8
+SF avg: -89.8671
+ZCR: 0.160815
+Min. Freq. at -10 dB: 305.573
+Max. Freq. at -10 dB: 14642.4
+
+NC/NC39.wav
+Spectral Centroid Sum: 9821.81
+Bandwidth: 5411.41
+SRF avg: 66.2679
+SF avg: -88.0113
+ZCR: 0.164515
+Min. Freq. at -10 dB: 1689.06
+Max. Freq. at -10 dB: 5906.1
+
+NC/NC40.wav
+Spectral Centroid Sum: 9149.4
+Bandwidth: 4892.48
+SRF avg: 71.7087
+SF avg: -86.4884
+ZCR: 0.166298
+Min. Freq. at -10 dB: 1839.84
+Max. Freq. at -10 dB: 5418.38
+
+NC/NC41.wav
+Spectral Centroid Sum: 8790.86
+Bandwidth: 4954.25
+SRF avg: 51.0194
+SF avg: -87.9691
+ZCR: 0.152125
+Min. Freq. at -10 dB: 1580.31
+Max. Freq. at -10 dB: 5941.08
+
+NC/NC42.wav
+Spectral Centroid Sum: 9140.12
+Bandwidth: 5011.77
+SRF avg: 54.819
+SF avg: -88.66
+ZCR: 0.146304
+Min. Freq. at -10 dB: 1605.23
+Max. Freq. at -10 dB: 6243.74
+
+NC/NC43.wav
+Spectral Centroid Sum: 8755.92
+Bandwidth: 4759.53
+SRF avg: 70.9604
+SF avg: -87.4378
+ZCR: 0.160801
+Min. Freq. at -10 dB: 1762.91
+Max. Freq. at -10 dB: 5458.69
+
+NC/NC44.wav
+Spectral Centroid Sum: 9350.59
+Bandwidth: 5157.56
+SRF avg: 47.5138
+SF avg: -89.3633
+ZCR: 0.145229
+Min. Freq. at -10 dB: 1614.44
+Max. Freq. at -10 dB: 6359.48
+
+NC/NC45.wav
+Spectral Centroid Sum: 10721.2
+Bandwidth: 6002.68
+SRF avg: 65.1626
+SF avg: -89.8923
+ZCR: 0.157399
+Min. Freq. at -10 dB: 1600.9
+Max. Freq. at -10 dB: 6890.37
+
+NC/NC46.wav
+Spectral Centroid Sum: 9825.28
+Bandwidth: 5399.38
+SRF avg: 63.9464
+SF avg: -87.5449
+ZCR: 0.160503
+Min. Freq. at -10 dB: 1639.8
+Max. Freq. at -10 dB: 5377.99
+
+NC/NC47.wav
+Spectral Centroid Sum: 9686.67
+Bandwidth: 5347.98
+SRF avg: 50.7321
+SF avg: -89.2702
+ZCR: 0.147771
+Min. Freq. at -10 dB: 1602.88
+Max. Freq. at -10 dB: 5912.66
+
+NC/NC48.wav
+Spectral Centroid Sum: 10820.3
+Bandwidth: 5996.89
+SRF avg: 76.3333
+SF avg: -90.5442
+ZCR: 0.15447
+Min. Freq. at -10 dB: 1600.93
+Max. Freq. at -10 dB: 6459.74
+
+NC/NC49.wav
+Spectral Centroid Sum: 13797.5
+Bandwidth: 7777.85
+SRF avg: 53.7375
+SF avg: -90.5176
+ZCR: 0.116231
+Min. Freq. at -10 dB: 300.176
+Max. Freq. at -10 dB: 15256.3
+
+NC/NC50.wav
+Spectral Centroid Sum: 8434.62
+Bandwidth: 4662.96
+SRF avg: 74.4583
+SF avg: -90.6186
+ZCR: 0.147002
+Min. Freq. at -10 dB: 360.155
+Max. Freq. at -10 dB: 15405.5
+
+NC/NC51.wav
+Spectral Centroid Sum: 7634.9
+Bandwidth: 4017.27
+SRF avg: 70.3294
+SF avg: -90.1972
+ZCR: 0.161338
+Min. Freq. at -10 dB: 490.638
+Max. Freq. at -10 dB: 12014
+
+NC/NC52.wav
+Spectral Centroid Sum: 9308.37
+Bandwidth: 5087.08
+SRF avg: 61.1215
+SF avg: -90.404
+ZCR: 0.13658
+Min. Freq. at -10 dB: 300.569
+Max. Freq. at -10 dB: 8435.98
+
+NC/NC53.wav
+Spectral Centroid Sum: 9067.53
+Bandwidth: 5061.54
+SRF avg: 75.514
+SF avg: -89.2012
+ZCR: 0.147645
+Min. Freq. at -10 dB: 299.391
+Max. Freq. at -10 dB: 8453.66
+
+NC/NC54.wav
+Spectral Centroid Sum: 12146.5
+Bandwidth: 6700.26
+SRF avg: 59
+SF avg: -91.0687
+ZCR: 0.123093
+Min. Freq. at -10 dB: 300.117
+Max. Freq. at -10 dB: 14337.6
+
+NC/NC55.wav
+Spectral Centroid Sum: 5259.64
+Bandwidth: 2925.79
+SRF avg: 59.3607
+SF avg: -90.5173
+ZCR: 0.172268
+Min. Freq. at -10 dB: 299.289
+Max. Freq. at -10 dB: 14318.7
+
+NC/NC56.wav
+Spectral Centroid Sum: 6947.09
+Bandwidth: 3765.73
+SRF avg: 61.8375
+SF avg: -91.4911
+ZCR: 0.168419
+Min. Freq. at -10 dB: 336.317
+Max. Freq. at -10 dB: 8131.34
+

@@ -1,0 +1,819 @@
+AK/AK1.wav
+Spectral Centroid Sum: 13660.4
+Bandwidth: 7635.76
+SRF avg: 63.6026
+SF avg: -89.0352
+ZCR: 0.216875
+Min. Freq. at -10 dB: 2145.7
+Max. Freq. at -10 dB: 7530.81
+
+AK/AK2.wav
+Spectral Centroid Sum: 11330.2
+Bandwidth: 6340.74
+SRF avg: 46.2578
+SF avg: -89.8007
+ZCR: 0.213026
+Min. Freq. at -10 dB: 2113.41
+Max. Freq. at -10 dB: 5506.02
+
+AK/AK3.wav
+Spectral Centroid Sum: 9934.7
+Bandwidth: 5468.31
+SRF avg: 116.071
+SF avg: -88.2445
+ZCR: 0.215379
+Min. Freq. at -10 dB: 2141.51
+Max. Freq. at -10 dB: 6386.54
+
+AK/AK4.wav
+Spectral Centroid Sum: 9622.47
+Bandwidth: 5255.4
+SRF avg: 124.602
+SF avg: -88.2974
+ZCR: 0.212921
+Min. Freq. at -10 dB: 2085.21
+Max. Freq. at -10 dB: 6968.47
+
+AK/AK5.wav
+Spectral Centroid Sum: 14335.5
+Bandwidth: 8138.35
+SRF avg: 115.805
+SF avg: -88.8849
+ZCR: 0.220978
+Min. Freq. at -10 dB: 2163.97
+Max. Freq. at -10 dB: 6556.8
+
+AK/AK6.wav
+Spectral Centroid Sum: 10537.1
+Bandwidth: 5927.45
+SRF avg: 56.4667
+SF avg: -88.3808
+ZCR: 0.214335
+Min. Freq. at -10 dB: 2156.23
+Max. Freq. at -10 dB: 6434.27
+
+AK/AK7.wav
+Spectral Centroid Sum: 25162.9
+Bandwidth: 14282.7
+SRF avg: 67.2548
+SF avg: -94.4052
+ZCR: 0.187863
+Min. Freq. at -10 dB: 3226.79
+Max. Freq. at -10 dB: 6575.33
+
+AK/AK8.wav
+Spectral Centroid Sum: 40057.7
+Bandwidth: 22947.7
+SRF avg: 58.7577
+SF avg: -94.2143
+ZCR: 0.188416
+Min. Freq. at -10 dB: 2113.94
+Max. Freq. at -10 dB: 7105.12
+
+AK/AK9.wav
+Spectral Centroid Sum: 27509.6
+Bandwidth: 15781.1
+SRF avg: 129.61
+SF avg: -93.4851
+ZCR: 0.189528
+Min. Freq. at -10 dB: 2335.95
+Max. Freq. at -10 dB: 6686.61
+
+AK/AK10.wav
+Spectral Centroid Sum: 27687.3
+Bandwidth: 15750.2
+SRF avg: 63.3414
+SF avg: -94.6839
+ZCR: 0.18688
+Min. Freq. at -10 dB: 2392.59
+Max. Freq. at -10 dB: 7224.02
+
+AK/AK11.wav
+Spectral Centroid Sum: 23564.2
+Bandwidth: 13563.9
+SRF avg: 123.576
+SF avg: -94.3878
+ZCR: 0.187174
+Min. Freq. at -10 dB: 3226.4
+Max. Freq. at -10 dB: 6159.44
+
+AK/AK12.wav
+Spectral Centroid Sum: 26298.4
+Bandwidth: 15037
+SRF avg: 122.373
+SF avg: -93.7891
+ZCR: 0.187729
+Min. Freq. at -10 dB: 2377.87
+Max. Freq. at -10 dB: 6246.79
+
+AK/AK13.wav
+Spectral Centroid Sum: 24979.6
+Bandwidth: 14346
+SRF avg: 55.8783
+SF avg: -92.3136
+ZCR: 0.187159
+Min. Freq. at -10 dB: 2248.53
+Max. Freq. at -10 dB: 6841.18
+
+AK/AK14.wav
+Spectral Centroid Sum: 24036.8
+Bandwidth: 13452.5
+SRF avg: 56.884
+SF avg: -90.287
+ZCR: 0.179081
+Min. Freq. at -10 dB: 2181.14
+Max. Freq. at -10 dB: 5508.16
+
+AK/AK15.wav
+Spectral Centroid Sum: 24956.9
+Bandwidth: 14291.3
+SRF avg: 62.0418
+SF avg: -91.4119
+ZCR: 0.186456
+Min. Freq. at -10 dB: 2175.77
+Max. Freq. at -10 dB: 7141.74
+
+AK/AK16.wav
+Spectral Centroid Sum: 21062.9
+Bandwidth: 12129.5
+SRF avg: 75.3393
+SF avg: -91.2973
+ZCR: 0.183667
+Min. Freq. at -10 dB: 3169.56
+Max. Freq. at -10 dB: 6176.87
+
+AK/AK17.wav
+Spectral Centroid Sum: 55165.2
+Bandwidth: 31712.7
+SRF avg: 69.5458
+SF avg: -95.8576
+ZCR: 0.186394
+Min. Freq. at -10 dB: 2228.94
+Max. Freq. at -10 dB: 7217.32
+
+AK/AK18.wav
+Spectral Centroid Sum: 20125.8
+Bandwidth: 11457.2
+SRF avg: 68.8199
+SF avg: -92.5667
+ZCR: 0.184534
+Min. Freq. at -10 dB: 2354.11
+Max. Freq. at -10 dB: 7065.89
+
+AK/AK19.wav
+Spectral Centroid Sum: 18587.6
+Bandwidth: 10503.2
+SRF avg: 56.1846
+SF avg: -94.7344
+ZCR: 0.209125
+Min. Freq. at -10 dB: 2380.64
+Max. Freq. at -10 dB: 7798.45
+
+AK/AK20.wav
+Spectral Centroid Sum: 25188.6
+Bandwidth: 14324
+SRF avg: 79.2917
+SF avg: -95.1326
+ZCR: 0.208005
+Min. Freq. at -10 dB: 2378.45
+Max. Freq. at -10 dB: 9505.24
+
+AK/AK21.wav
+Spectral Centroid Sum: 18608
+Bandwidth: 10424.6
+SRF avg: 58.7538
+SF avg: -94.2095
+ZCR: 0.209742
+Min. Freq. at -10 dB: 2345.2
+Max. Freq. at -10 dB: 10089.5
+
+AK/AK22.wav
+Spectral Centroid Sum: 30252.2
+Bandwidth: 17298.4
+SRF avg: 54.9154
+SF avg: -95.9815
+ZCR: 0.208809
+Min. Freq. at -10 dB: 2585.22
+Max. Freq. at -10 dB: 9933.04
+
+AK/AK23.wav
+Spectral Centroid Sum: 14634.1
+Bandwidth: 8164.26
+SRF avg: 134.275
+SF avg: -92.7816
+ZCR: 0.205532
+Min. Freq. at -10 dB: 2369
+Max. Freq. at -10 dB: 6481.34
+
+AK/AK24.wav
+Spectral Centroid Sum: 45047.6
+Bandwidth: 25732.5
+SRF avg: 69.1314
+SF avg: -94.779
+ZCR: 0.20468
+Min. Freq. at -10 dB: 2385.26
+Max. Freq. at -10 dB: 6631.3
+
+AK/AK25.wav
+Spectral Centroid Sum: 25053.6
+Bandwidth: 14319.3
+SRF avg: 115.799
+SF avg: -93.9922
+ZCR: 0.202605
+Min. Freq. at -10 dB: 2497.13
+Max. Freq. at -10 dB: 6467.38
+
+AK/AK26.wav
+Spectral Centroid Sum: 14698.8
+Bandwidth: 8186.72
+SRF avg: 125.83
+SF avg: -91.0506
+ZCR: 0.198732
+Min. Freq. at -10 dB: 2319.8
+Max. Freq. at -10 dB: 5962.28
+
+AK/AK27.wav
+Spectral Centroid Sum: 19948.1
+Bandwidth: 11258.5
+SRF avg: 73.9471
+SF avg: -92.0018
+ZCR: 0.199268
+Min. Freq. at -10 dB: 2339.81
+Max. Freq. at -10 dB: 5313.42
+
+AK/AK28.wav
+Spectral Centroid Sum: 24963.5
+Bandwidth: 14283.3
+SRF avg: 82.3258
+SF avg: -92.87
+ZCR: 0.200479
+Min. Freq. at -10 dB: 2321.95
+Max. Freq. at -10 dB: 5189.38
+
+AK/AK29.wav
+Spectral Centroid Sum: 32943.1
+Bandwidth: 18813.1
+SRF avg: 68.7637
+SF avg: -95.8129
+ZCR: 0.203861
+Min. Freq. at -10 dB: 2350.26
+Max. Freq. at -10 dB: 7307.32
+
+AK/AK30.wav
+Spectral Centroid Sum: 26408.9
+Bandwidth: 15108.5
+SRF avg: 121.018
+SF avg: -96.3486
+ZCR: 0.20591
+Min. Freq. at -10 dB: 2374.97
+Max. Freq. at -10 dB: 6591.37
+
+AK/AK31.wav
+Spectral Centroid Sum: 33158.6
+Bandwidth: 19060.7
+SRF avg: 63.4035
+SF avg: -95.818
+ZCR: 0.209092
+Min. Freq. at -10 dB: 2409.8
+Max. Freq. at -10 dB: 9697.99
+
+AK/AK32.wav
+Spectral Centroid Sum: 11949.3
+Bandwidth: 6629.41
+SRF avg: 78.8
+SF avg: -91.835
+ZCR: 0.20717
+Min. Freq. at -10 dB: 2175.85
+Max. Freq. at -10 dB: 8516.99
+
+AK/AK33.wav
+Spectral Centroid Sum: 31946.7
+Bandwidth: 18301.7
+SRF avg: 85.1671
+SF avg: -93.8798
+ZCR: 0.210667
+Min. Freq. at -10 dB: 2016.47
+Max. Freq. at -10 dB: 9007.5
+
+AK/AK34.wav
+Spectral Centroid Sum: 40233.1
+Bandwidth: 23220.7
+SRF avg: 54.3543
+SF avg: -94.754
+ZCR: 0.203948
+Min. Freq. at -10 dB: 1721.82
+Max. Freq. at -10 dB: 9492.88
+
+AK/AK35.wav
+Spectral Centroid Sum: 22729.9
+Bandwidth: 13010.4
+SRF avg: 64.5521
+SF avg: -92.7567
+ZCR: 0.207226
+Min. Freq. at -10 dB: 2050.81
+Max. Freq. at -10 dB: 9476.99
+
+AK/AK36.wav
+Spectral Centroid Sum: 41215.1
+Bandwidth: 23765.2
+SRF avg: 56.3524
+SF avg: -94.1434
+ZCR: 0.211448
+Min. Freq. at -10 dB: 2036.62
+Max. Freq. at -10 dB: 9226.1
+
+AK/AK37.wav
+Spectral Centroid Sum: 30022.9
+Bandwidth: 17077.5
+SRF avg: 120.304
+SF avg: -95.1725
+ZCR: 0.212884
+Min. Freq. at -10 dB: 2218.9
+Max. Freq. at -10 dB: 9418.22
+
+AK/AK38.wav
+Spectral Centroid Sum: 29489.6
+Bandwidth: 16787.8
+SRF avg: 49.8683
+SF avg: -97.8171
+ZCR: 0.211467
+Min. Freq. at -10 dB: 2182.49
+Max. Freq. at -10 dB: 9366.58
+
+AK/AK39.wav
+Spectral Centroid Sum: 15419.5
+Bandwidth: 8775.4
+SRF avg: 55.8531
+SF avg: -95.2007
+ZCR: 0.215819
+Min. Freq. at -10 dB: 2249
+Max. Freq. at -10 dB: 9478.59
+
+AK/AK40.wav
+Spectral Centroid Sum: 15940.9
+Bandwidth: 9119.14
+SRF avg: 56.765
+SF avg: -93.7897
+ZCR: 0.208145
+Min. Freq. at -10 dB: 2230.39
+Max. Freq. at -10 dB: 9207.29
+
+AK/AK41.wav
+Spectral Centroid Sum: 15386.4
+Bandwidth: 8797.34
+SRF avg: 62.0113
+SF avg: -92.8366
+ZCR: 0.20111
+Min. Freq. at -10 dB: 2080.09
+Max. Freq. at -10 dB: 9068.39
+
+AK/AK42.wav
+Spectral Centroid Sum: 14343.4
+Bandwidth: 8083.7
+SRF avg: 109.378
+SF avg: -94.3607
+ZCR: 0.207951
+Min. Freq. at -10 dB: 2107.9
+Max. Freq. at -10 dB: 9161.48
+
+AK/AK43.wav
+Spectral Centroid Sum: 10578.8
+Bandwidth: 5980.74
+SRF avg: 141.239
+SF avg: -92.116
+ZCR: 0.136962
+Min. Freq. at -10 dB: 2035.49
+Max. Freq. at -10 dB: 5112.12
+
+AK/AK44.wav
+Spectral Centroid Sum: 7482.67
+Bandwidth: 4182.18
+SRF avg: 134.925
+SF avg: -91.7528
+ZCR: 0.112099
+Min. Freq. at -10 dB: 1423.95
+Max. Freq. at -10 dB: 7042.56
+
+AK/AK45.wav
+Spectral Centroid Sum: 15320.9
+Bandwidth: 8575.23
+SRF avg: 57.2
+SF avg: -89.6277
+ZCR: 0.173727
+Min. Freq. at -10 dB: 1964.48
+Max. Freq. at -10 dB: 5937.24
+
+AK/AK46.wav
+Spectral Centroid Sum: 11463.8
+Bandwidth: 6372.65
+SRF avg: 54.2083
+SF avg: -90.4501
+ZCR: 0.171786
+Min. Freq. at -10 dB: 1976.97
+Max. Freq. at -10 dB: 6835.99
+
+AK/AK47.wav
+Spectral Centroid Sum: 12301.1
+Bandwidth: 6766.85
+SRF avg: 82.9457
+SF avg: -88.0283
+ZCR: 0.169909
+Min. Freq. at -10 dB: 1754.23
+Max. Freq. at -10 dB: 6652.86
+
+AK/AK48.wav
+Spectral Centroid Sum: 13120.6
+Bandwidth: 7319.27
+SRF avg: 71.4493
+SF avg: -87.6562
+ZCR: 0.174159
+Min. Freq. at -10 dB: 1587.47
+Max. Freq. at -10 dB: 5807.7
+
+AK/AK49.wav
+Spectral Centroid Sum: 15010.9
+Bandwidth: 8353.61
+SRF avg: 54.8654
+SF avg: -88.8123
+ZCR: 0.175001
+Min. Freq. at -10 dB: 1930.49
+Max. Freq. at -10 dB: 6478.4
+
+AK/AK50.wav
+Spectral Centroid Sum: 11874.9
+Bandwidth: 6573.07
+SRF avg: 108.248
+SF avg: -89.1235
+ZCR: 0.176777
+Min. Freq. at -10 dB: 2026.06
+Max. Freq. at -10 dB: 5970.59
+
+AK/AK51.wav
+Spectral Centroid Sum: 31246.1
+Bandwidth: 17814.3
+SRF avg: 84.1345
+SF avg: -93.2009
+ZCR: 0.199757
+Min. Freq. at -10 dB: 1998.62
+Max. Freq. at -10 dB: 7272.5
+
+AK/AK52.wav
+Spectral Centroid Sum: 28714.9
+Bandwidth: 16462.3
+SRF avg: 61.2614
+SF avg: -95.5154
+ZCR: 0.200553
+Min. Freq. at -10 dB: 2085.83
+Max. Freq. at -10 dB: 6474.3
+
+AK/AK53.wav
+Spectral Centroid Sum: 27564.2
+Bandwidth: 15902.2
+SRF avg: 102.274
+SF avg: -96.6418
+ZCR: 0.201177
+Min. Freq. at -10 dB: 2031.42
+Max. Freq. at -10 dB: 5425.35
+
+AK/AK54.wav
+Spectral Centroid Sum: 16222.3
+Bandwidth: 9305.89
+SRF avg: 54.5079
+SF avg: -94.565
+ZCR: 0.203489
+Min. Freq. at -10 dB: 2122.72
+Max. Freq. at -10 dB: 5584.83
+
+AK/AK55.wav
+Spectral Centroid Sum: 47076.7
+Bandwidth: 26962.8
+SRF avg: 50.4422
+SF avg: -95.8885
+ZCR: 0.205404
+Min. Freq. at -10 dB: 1653.63
+Max. Freq. at -10 dB: 9623.24
+
+AK/AK56.wav
+Spectral Centroid Sum: 26157.2
+Bandwidth: 14906.9
+SRF avg: 74.02
+SF avg: -94.4312
+ZCR: 0.204287
+Min. Freq. at -10 dB: 2218.73
+Max. Freq. at -10 dB: 7244.2
+
+AK/AK57.wav
+Spectral Centroid Sum: 23522.1
+Bandwidth: 13290
+SRF avg: 60.6273
+SF avg: -93.465
+ZCR: 0.207277
+Min. Freq. at -10 dB: 2149.2
+Max. Freq. at -10 dB: 6701.62
+
+AK/AK58.wav
+Spectral Centroid Sum: 10278.4
+Bandwidth: 5857.9
+SRF avg: 62.3193
+SF avg: -87.1282
+ZCR: 0.162274
+Min. Freq. at -10 dB: 4766.66
+Max. Freq. at -10 dB: 4868.77
+
+AK/AK59.wav
+Spectral Centroid Sum: 7863.16
+Bandwidth: 4498.53
+SRF avg: 125.681
+SF avg: -87.1581
+ZCR: 0.180385
+Min. Freq. at -10 dB: 4344.33
+Max. Freq. at -10 dB: 5268.97
+
+AK/AK60.wav
+Spectral Centroid Sum: 6439.24
+Bandwidth: 3583.07
+SRF avg: 54.3067
+SF avg: -86.1179
+ZCR: 0.194685
+Min. Freq. at -10 dB: 2342.3
+Max. Freq. at -10 dB: 5258.77
+
+AK/AK61.wav
+Spectral Centroid Sum: 3987.77
+Bandwidth: 2224.79
+SRF avg: 56.6667
+SF avg: -91.0485
+ZCR: 0.231723
+Min. Freq. at -10 dB: 2421.38
+Max. Freq. at -10 dB: 6871.91
+
+AK/AK62.wav
+Spectral Centroid Sum: 4525.37
+Bandwidth: 2433.68
+SRF avg: 50.3333
+SF avg: -85.3413
+ZCR: 0.171358
+Min. Freq. at -10 dB: 2232.56
+Max. Freq. at -10 dB: 5398.44
+
+AK/AK63.wav
+Spectral Centroid Sum: 15456.6
+Bandwidth: 8817.88
+SRF avg: 118.659
+SF avg: -95.1507
+ZCR: 0.224998
+Min. Freq. at -10 dB: 2053.48
+Max. Freq. at -10 dB: 6803.29
+
+AK/AK64.wav
+Spectral Centroid Sum: 17852.1
+Bandwidth: 10106.1
+SRF avg: 97.6561
+SF avg: -93.2637
+ZCR: 0.217379
+Min. Freq. at -10 dB: 2125.36
+Max. Freq. at -10 dB: 6868.24
+
+AK/AK65.wav
+Spectral Centroid Sum: 19753
+Bandwidth: 11134.1
+SRF avg: 55.375
+SF avg: -93.6904
+ZCR: 0.219389
+Min. Freq. at -10 dB: 2184.51
+Max. Freq. at -10 dB: 7115.65
+
+AK/AK66.wav
+Spectral Centroid Sum: 16982.8
+Bandwidth: 9584.28
+SRF avg: 56.067
+SF avg: -92.8908
+ZCR: 0.227904
+Min. Freq. at -10 dB: 2242.83
+Max. Freq. at -10 dB: 5344.21
+
+AK/AK67.wav
+Spectral Centroid Sum: 19825
+Bandwidth: 11249.5
+SRF avg: 77.4423
+SF avg: -92.559
+ZCR: 0.229241
+Min. Freq. at -10 dB: 2053.51
+Max. Freq. at -10 dB: 7222.61
+
+AK/AK68.wav
+Spectral Centroid Sum: 22391.5
+Bandwidth: 12833.6
+SRF avg: 65.928
+SF avg: -93.6047
+ZCR: 0.221059
+Min. Freq. at -10 dB: 2168.92
+Max. Freq. at -10 dB: 6957.87
+
+AK/AK69.wav
+Spectral Centroid Sum: 16845.9
+Bandwidth: 9612.94
+SRF avg: 57.229
+SF avg: -92.7215
+ZCR: 0.221813
+Min. Freq. at -10 dB: 2202.95
+Max. Freq. at -10 dB: 7117.12
+
+AK/AK70.wav
+Spectral Centroid Sum: 18827.8
+Bandwidth: 10683.2
+SRF avg: 109.692
+SF avg: -93.7185
+ZCR: 0.223341
+Min. Freq. at -10 dB: 2186.71
+Max. Freq. at -10 dB: 7128.78
+
+AK/AK71.wav
+Spectral Centroid Sum: 12395.3
+Bandwidth: 7034.04
+SRF avg: 76.0227
+SF avg: -92.1064
+ZCR: 0.221175
+Min. Freq. at -10 dB: 2225.94
+Max. Freq. at -10 dB: 7302.14
+
+AK/AK72.wav
+Spectral Centroid Sum: 15098.1
+Bandwidth: 8650.06
+SRF avg: 62.7188
+SF avg: -95.3805
+ZCR: 0.221423
+Min. Freq. at -10 dB: 2098
+Max. Freq. at -10 dB: 7407.46
+
+AK/AK73.wav
+Spectral Centroid Sum: 11411.5
+Bandwidth: 6471.68
+SRF avg: 51.8182
+SF avg: -93.7563
+ZCR: 0.210563
+Min. Freq. at -10 dB: 1570.54
+Max. Freq. at -10 dB: 7360.63
+
+AK/AK74.wav
+Spectral Centroid Sum: 17420.7
+Bandwidth: 10030.9
+SRF avg: 69.7688
+SF avg: -93.904
+ZCR: 0.213375
+Min. Freq. at -10 dB: 2185.01
+Max. Freq. at -10 dB: 7150.95
+
+AK/AK75.wav
+Spectral Centroid Sum: 11407.5
+Bandwidth: 6415.42
+SRF avg: 98.876
+SF avg: -92.7076
+ZCR: 0.224467
+Min. Freq. at -10 dB: 1570.58
+Max. Freq. at -10 dB: 7123.54
+
+AK/AK76.wav
+Spectral Centroid Sum: 8413.4
+Bandwidth: 4619.87
+SRF avg: 120.404
+SF avg: -94.5085
+ZCR: 0.234011
+Min. Freq. at -10 dB: 2216.56
+Max. Freq. at -10 dB: 5430.5
+
+AK/AK77.wav
+Spectral Centroid Sum: 7947.35
+Bandwidth: 4491.37
+SRF avg: 110.612
+SF avg: -92.2393
+ZCR: 0.234144
+Min. Freq. at -10 dB: 1889.93
+Max. Freq. at -10 dB: 8176.86
+
+AK/AK78.wav
+Spectral Centroid Sum: 8757.78
+Bandwidth: 4866.29
+SRF avg: 59.6021
+SF avg: -92.2236
+ZCR: 0.234024
+Min. Freq. at -10 dB: 2222.85
+Max. Freq. at -10 dB: 7049.6
+
+AK/AK79.wav
+Spectral Centroid Sum: 11804.6
+Bandwidth: 6705.66
+SRF avg: 62.776
+SF avg: -91.9084
+ZCR: 0.233515
+Min. Freq. at -10 dB: 1624.16
+Max. Freq. at -10 dB: 5566.26
+
+AK/AK80.wav
+Spectral Centroid Sum: 15214.9
+Bandwidth: 8726.34
+SRF avg: 110.298
+SF avg: -92.1477
+ZCR: 0.220891
+Min. Freq. at -10 dB: 1624.68
+Max. Freq. at -10 dB: 5280.41
+
+AK/AK81.wav
+Spectral Centroid Sum: 13308.7
+Bandwidth: 7617.07
+SRF avg: 122.411
+SF avg: -93.6325
+ZCR: 0.244806
+Min. Freq. at -10 dB: 2310.54
+Max. Freq. at -10 dB: 5817.19
+
+AK/AK82.wav
+Spectral Centroid Sum: 6515.56
+Bandwidth: 3634.06
+SRF avg: 57.6522
+SF avg: -92.4607
+ZCR: 0.245325
+Min. Freq. at -10 dB: 1568.62
+Max. Freq. at -10 dB: 7713.27
+
+AK/AK83.wav
+Spectral Centroid Sum: 20889.4
+Bandwidth: 11894.2
+SRF avg: 58.7123
+SF avg: -97.739
+ZCR: 0.205971
+Min. Freq. at -10 dB: 1919.63
+Max. Freq. at -10 dB: 8240
+
+AK/AK84.wav
+Spectral Centroid Sum: 32727.3
+Bandwidth: 18786
+SRF avg: 100.174
+SF avg: -95.4756
+ZCR: 0.19669
+Min. Freq. at -10 dB: 1299.73
+Max. Freq. at -10 dB: 5298.73
+
+AK/AK85.wav
+Spectral Centroid Sum: 16005.5
+Bandwidth: 9045.03
+SRF avg: 103.583
+SF avg: -93.5008
+ZCR: 0.196382
+Min. Freq. at -10 dB: 1915.18
+Max. Freq. at -10 dB: 7675.6
+
+AK/AK86.wav
+Spectral Centroid Sum: 15733.4
+Bandwidth: 8927.33
+SRF avg: 105.049
+SF avg: -90.5386
+ZCR: 0.223963
+Min. Freq. at -10 dB: 1930.03
+Max. Freq. at -10 dB: 7008.58
+
+AK/AK87.wav
+Spectral Centroid Sum: 10183.9
+Bandwidth: 5705.43
+SRF avg: 55.4359
+SF avg: -93.1756
+ZCR: 0.213884
+Min. Freq. at -10 dB: 2289.95
+Max. Freq. at -10 dB: 7004.49
+
+AK/AK88.wav
+Spectral Centroid Sum: 11746.3
+Bandwidth: 6577.63
+SRF avg: 112.368
+SF avg: -87.869
+ZCR: 0.204846
+Min. Freq. at -10 dB: 650.861
+Max. Freq. at -10 dB: 5754.5
+
+AK/AK89.wav
+Spectral Centroid Sum: 15216.7
+Bandwidth: 8712.09
+SRF avg: 129.642
+SF avg: -89.6825
+ZCR: 0.196236
+Min. Freq. at -10 dB: 2122.9
+Max. Freq. at -10 dB: 5297.27
+
+AK/AK90.wav
+Spectral Centroid Sum: 12007.2
+Bandwidth: 6822.74
+SRF avg: 104.698
+SF avg: -91.6297
+ZCR: 0.189801
+Min. Freq. at -10 dB: 2013.72
+Max. Freq. at -10 dB: 8788.29
+
+AK/AK91.wav
+Spectral Centroid Sum: 18679
+Bandwidth: 10734.1
+SRF avg: 109.889
+SF avg: -93.0311
+ZCR: 0.207853
+Min. Freq. at -10 dB: 2105.9
+Max. Freq. at -10 dB: 8837.07
+
