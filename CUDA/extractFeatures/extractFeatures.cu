@@ -31,11 +31,12 @@ int main(int argc, char **argv){
   if(argc == 3){
     int numFiles = atoi(argv[2]);
     std::string filename(argv[1]);
+    std::stringstream ss;
     for(int i = 1; i <= numFiles; i++){
-      std::stringstream ss;
       ss << filename << i << ".wav";
       std::cout << ss.str() << std::endl;
       extractFeatures(argc, argv, ss.str().c_str());
+      ss.str("");
     }
   }
   else{
