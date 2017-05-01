@@ -6,6 +6,8 @@
 #include <vector>
 #include <string>
 #include <sstream>
+#include <fstream>
+#include <queue>
 
 // includes, project
 #include <cuda_runtime.h>
@@ -268,6 +270,30 @@ void extractFeatures(int argc, char **argv, const char* filename){
     std::cout << "Max. Freq. at " << threshold << " dB: " << maxf << std::endl;
     printf("\n");
 
+    // create queue of feature values to be saved
+    std::queue<float> features;
+    features.push(SCsum);
+    features.push(BWsum);
+    features.push(SRFavg);
+    features.push(SFavg);
+    features.push(zcr);
+    features.push(minf);
+    features.push(maxf);
+    exportCSVFormat(features)
+
+    // create the label
+    std::ofstream labelfile = file.open("TrainingLabels.csv", std::ofstream::app);
+    int label = getTrueLabel(filename);
+    if(label != -1){
+        for(int i = 0; i < 5; i++){
+            if(i == label) labelfile << "1";
+            else labelfile << "0";
+            if(i < 4) labelfile << ",";
+            else labelfile << endl;
+        }
+    }
+    labelfile.close();
+
     // cleanup memory
     free(wave);
     free(h_signal);
@@ -279,4 +305,24 @@ float absComplex(Complex n){
   float ret = 0;
   ret = sqrt(pow(n.x, 2) + pow(n.y, 2));
   return ret;
+}
+
+void exportCSVFormat(queue<float>& features){
+    std::ofstream datafile = file.open("TrainingData.csv", std::ofstream::app);
+    while(!features.empty()){
+        datafile << features.front();
+        features.pop();
+        if(features.size() > 0) datafile << ",";
+        else datafile << std::endl;
+    }
+    datafile.close();
+}
+
+int getTrueLabel(std::string name){
+    if(name.find("BJ") != std::string::npos) return 0;
+    else if(name.find("CG/") != std::string::npos) return 1;
+    else if(name.find("AK/") != std::string::npos) return 2;
+    else if(name.find("NC/") != std::string::npos) return 3;
+    else if(name.find("AYW/") != std::string::npos) return 4;
+    else return -1;
 }
