@@ -6,6 +6,8 @@
 #include <vector>
 #include <string>
 #include <sstream>
+#include <fstream>
+#include <queue>
 
 // includes, project
 #include <cuda_runtime.h>
@@ -23,6 +25,8 @@ typedef float2 Complex;
 // declaration, forward
 void extractFeatures(int argc, char **argv, const char* filename);
 float absComplex(Complex n);
+int getTrueLabel(std::string name);
+
 
 ////////////////////////////////////////////////////////////////////////////////
 // Program main
@@ -222,20 +226,18 @@ void extractFeatures(int argc, char **argv, const char* filename){
 
 
     // calculate min and max frequencies (at certain a certain threshold)
-    int logFFT_size = sizeof(float) * (fft_signal_size);
-    float* logFFT;
-    logFFT = (float*)malloc(logFFT_size);
+    float logFFT = 0;
 
     float maxf = 0;
     float minf = fft_signal_size;
-    int s = 300/freq; // should only begin computing min/max at 400 Hz, ignore earlier values as they are most likely noise (should probably vary this value too)
+    int s = 300/freq; // should only begin computing min/max at 300 Hz, ignore earlier values as they are most likely noise (should probably vary this value too)
     int threshold = -10; // vary this value
     for(int i = s; i < fft_signal_size; i++){
-      logFFT[i] = 10*(log10(absComplex(h_signal[i])/maxFFT));
-      if(logFFT[i] > threshold && i < minf){
+      logFFT = 10*(log10(absComplex(h_signal[i])/maxFFT));
+      if(logFFT > threshold && i < minf){
           minf = i;
       }
-      if(logFFT[i] > threshold && i > maxf){
+      if(logFFT > threshold && i > maxf){
         maxf = i;
       }
     }
@@ -259,24 +261,56 @@ void extractFeatures(int argc, char **argv, const char* filename){
     float SFavg = SFsum/num_frames;
 
     //report values
-    std::cout << "Spectral Centroid Sum: " << SCsum << std::endl;
-    std::cout << "Bandwidth: " << BWsum << std::endl;
-    std::cout << "SRF avg: " << SRFavg << std::endl;
-    std::cout << "SF avg: " << SFavg << std::endl;
-    std::cout << "ZCR: " << zcr << std::endl;
-    std::cout << "Min. Freq. at " << threshold << " dB: " << minf << std::endl;
-    std::cout << "Max. Freq. at " << threshold << " dB: " << maxf << std::endl;
-    printf("\n");
+//    std::cout << "Spectral Centroid Sum: " << SCsum << std::endl;
+//    std::cout << "Bandwidth: " << BWsum << std::endl;
+//    std::cout << "SRF avg: " << SRFavg << std::endl;
+//    std::cout << "SF avg: " << SFavg << std::endl;
+//    std::cout << "ZCR: " << zcr << std::endl;
+//    std::cout << "Min. Freq. at " << threshold << " dB: " << minf << std::endl;
+//    std::cout << "Max. Freq. at " << threshold << " dB: " << maxf << std::endl;
+//    std::cout << SCsum <<","<< BWsum <<","<< SRFavg <<","<< SFavg <<","<< zcr <<","<< minf <<","<< maxf << std::endl;
+//    printf("\n");
+
+    // create queue of feature values to be saved
+    std::ofstream datafile;
+    datafile.open("TrainingData.csv", std::ofstream::app);
+    datafile << SCsum <<","<< BWsum <<","<< SRFavg <<","<< SFavg <<","<< zcr <<","<< minf <<","<< maxf <<"\n";
+    datafile.close();
+
+    // create the label
+    std::ofstream labelfile;
+    labelfile.open("TrainingLabels.csv", std::ofstream::app);
+    int label = getTrueLabel(filename);
+    if(label != -1){
+        for(int i = 0; i < 8; i++){
+            if(i == label) labelfile << "1";
+            else labelfile << "0";
+            if(i < 7) labelfile << ",";
+            else labelfile << std::endl;
+        }
+    }
+    labelfile.close();
 
     // cleanup memory
     free(wave);
     free(h_signal);
     checkCudaErrors(cudaFree(d_signal));
-    free(logFFT);
 }
 
 float absComplex(Complex n){
   float ret = 0;
   ret = sqrt(pow(n.x, 2) + pow(n.y, 2));
   return ret;
+}
+
+int getTrueLabel(std::string name){
+    if(name.find("AC/") != std::string::npos) return 0;
+    else if(name.find("AK/") != std::string::npos) return 1;
+    else if(name.find("AYW/") != std::string::npos) return 2;
+    else if(name.find("BJ/") != std::string::npos) return 3;
+    else if(name.find("CG/") != std::string::npos) return 4;
+    else if(name.find("GC/") != std::string::npos) return 5;
+    else if(name.find("GWT/") != std::string::npos) return 6;
+    else if(name.find("NC/") != std::string::npos) return 7;
+    else return -1;
 }
