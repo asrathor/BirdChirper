@@ -9,12 +9,15 @@
 #include <fstream>
 #include <queue>
 
-// includes, project
+// includes for CUDA
 #include <cuda_runtime.h>
 #include <cufft.h>
 #include <cufftXt.h>
 #include <helper_functions.h>
 #include <helper_cuda.h>
+
+// includes for FFTW
+//#include <fftw3.h>
 
 #include <sndfile.h>
 
@@ -25,7 +28,6 @@ typedef float2 Complex;
 // declaration, forward
 void extractFeatures(int argc, char **argv, const char* filename);
 float absComplex(Complex n);
-int getTrueLabel(std::string name);
 
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -38,7 +40,7 @@ int main(int argc, char **argv){
     std::stringstream ss;
     for(int i = 1; i <= numFiles; i++){
       ss << filename << i << ".wav";
-      std::cout << ss.str() << std::endl;
+//      std::cout << ss.str() << std::endl;
       extractFeatures(argc, argv, ss.str().c_str());
       ss.str("");
     }
@@ -92,6 +94,7 @@ void extractFeatures(int argc, char **argv, const char* filename){
     int mem_size = sizeof(Complex) * signal_size;
     Complex *h_signal = (Complex *)malloc(mem_size);
 
+
     Complex val;
     for(int k = 0; k < signal_size; k++){
       val.x = wave[k];
@@ -99,6 +102,30 @@ void extractFeatures(int argc, char **argv, const char* filename){
       h_signal[k] = val;
     }
 
+
+/*
+    // FFTW3 FFT
+    fftw_complex *in, *out;
+    fftw_plan p;
+
+    in = (fftw_complex*) fftw_malloc(sizeof(fftw_complex)*signal_size);
+    out = (fftw_complex*) fftw_malloc(sizeof(fftw_complex)*signal_size);
+
+    for(int k = 0; k < signal_size; k++){
+      in[k][0] = (double)wave[k];
+      in[k][1] = 0;
+    }
+
+    p = fftw_plan_dft_1d(signal_size, in, out, FFTW_FORWARD, FFTW_ESTIMATE);
+    fftw_execute(p);
+
+    fftw_destroy_plan(p);
+    fftw_free(in);
+    fftw_free(out);
+*/
+
+
+    // CUDA FFT
     // Allocate device memory for signal
     Complex *d_signal;
     checkCudaErrors(cudaMalloc((void **)&d_signal, mem_size));
@@ -126,7 +153,7 @@ void extractFeatures(int argc, char **argv, const char* filename){
     fft_signal_size = signal_size/2;
     float freq = static_cast<float>(sr)/static_cast<float>(signal_size); // frequency per index of array
     signal_time = static_cast<float>(signal_size) / static_cast<float>(sr);
-    frame_length = 0.004; // vary this value
+    frame_length = 0.005; // vary this value
     num_frames = signal_time/(2*frame_length);
     num_frames = static_cast<int>(num_frames)+1;
     frame_size = (int)(signal_size/(2*num_frames));
@@ -280,14 +307,30 @@ void extractFeatures(int argc, char **argv, const char* filename){
     // create the label
     std::ofstream labelfile;
     labelfile.open("TrainingLabels.csv", std::ofstream::app);
-    int label = getTrueLabel(filename);
-    if(label != -1){
-        for(int i = 0; i < 8; i++){
-            if(i == label) labelfile << "1";
-            else labelfile << "0";
-            if(i < 7) labelfile << ",";
-            else labelfile << std::endl;
-        }
+    std::string name = filename;
+    if(name.find("AC/") != std::string::npos){
+      labelfile << 1 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 0 <<"\n";
+    }
+    else if(name.find("AK/") != std::string::npos){
+      labelfile << 0 <<","<< 1 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 0 <<"\n";
+    }
+    else if(name.find("AYW/") != std::string::npos){
+      labelfile << 0 <<","<< 0 <<","<< 1 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 0 <<"\n";
+    }
+    else if(name.find("BJ/") != std::string::npos){
+      labelfile << 0 <<","<< 0 <<","<< 0 <<","<< 1 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 0 <<"\n";
+    }
+    else if(name.find("CG/") != std::string::npos){
+      labelfile << 0 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 1 <<","<< 0 <<","<< 0 <<","<< 0 <<"\n";
+    }
+    else if(name.find("GC/") != std::string::npos){
+      labelfile << 0 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 1 <<","<< 0 <<","<< 0 <<"\n";
+    }
+    else if(name.find("GWT/") != std::string::npos){
+      labelfile << 0 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 1 <<","<< 0 <<"\n";
+    }
+    else if(name.find("NC/") != std::string::npos){
+      labelfile << 0 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 1 <<"\n";
     }
     labelfile.close();
 
@@ -301,16 +344,4 @@ float absComplex(Complex n){
   float ret = 0;
   ret = sqrt(pow(n.x, 2) + pow(n.y, 2));
   return ret;
-}
-
-int getTrueLabel(std::string name){
-    if(name.find("AC/") != std::string::npos) return 0;
-    else if(name.find("AK/") != std::string::npos) return 1;
-    else if(name.find("AYW/") != std::string::npos) return 2;
-    else if(name.find("BJ/") != std::string::npos) return 3;
-    else if(name.find("CG/") != std::string::npos) return 4;
-    else if(name.find("GC/") != std::string::npos) return 5;
-    else if(name.find("GWT/") != std::string::npos) return 6;
-    else if(name.find("NC/") != std::string::npos) return 7;
-    else return -1;
 }
