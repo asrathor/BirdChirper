@@ -323,28 +323,28 @@ void extractFeatures(int argc, char **argv, const char* filename){
       std::ofstream labelfile;
       labelfile.open("TrainingLabels.csv", std::ofstream::app);
       std::string name = filename;
-      if(name.find("AC/") != std::string::npos){
+      if(name.find("AC") != std::string::npos){
         labelfile << 1 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 0 <<"\n";
       }
-      else if(name.find("AK/") != std::string::npos){
+      else if(name.find("AK") != std::string::npos){
         labelfile << 0 <<","<< 1 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 0 <<"\n";
       }
-      else if(name.find("AYW/") != std::string::npos){
+      else if(name.find("AYW") != std::string::npos){
         labelfile << 0 <<","<< 0 <<","<< 1 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 0 <<"\n";
       }
-      else if(name.find("BJ/") != std::string::npos){
+      else if(name.find("BJ") != std::string::npos){
         labelfile << 0 <<","<< 0 <<","<< 0 <<","<< 1 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 0 <<"\n";
       }
-      else if(name.find("CG/") != std::string::npos){
+      else if(name.find("CG") != std::string::npos){
         labelfile << 0 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 1 <<","<< 0 <<","<< 0 <<","<< 0 <<"\n";
       }
-      else if(name.find("GC/") != std::string::npos){
+      else if(name.find("GC") != std::string::npos){
         labelfile << 0 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 1 <<","<< 0 <<","<< 0 <<"\n";
       }
-      else if(name.find("GWT/") != std::string::npos){
+      else if(name.find("GWT") != std::string::npos){
         labelfile << 0 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 1 <<","<< 0 <<"\n";
       }
-      else if(name.find("NC/") != std::string::npos){
+      else if(name.find("NC") != std::string::npos){
         labelfile << 0 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 1 <<"\n";
       }
       labelfile.close();
