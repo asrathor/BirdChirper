@@ -3,7 +3,7 @@ from pydub import AudioSegment
 def monoconvert(filename, num):
     sound = AudioSegment.from_wav(filename)
     sound = sound.set_channels(1)
-    sound.export("Mono/NC/NC"+str(num)+".wav", format="wav")
+    sound.export("NC/NC"+str(num)+".wav", format="wav")
 
 for i in range(1,58):
     #filepath = "American Kestrel/AK"+str(i)+".wav" #92
