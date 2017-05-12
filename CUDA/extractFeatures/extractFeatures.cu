@@ -34,7 +34,12 @@ float absComplex(Complex n);
 // Program main
 ////////////////////////////////////////////////////////////////////////////////
 int main(int argc, char **argv){
-  if(argc == 3){
+  if(argc == 2){
+    std::string filename(argv[1]);
+    filename += ".wav";
+    extractFeatures(argc, argv, filename.c_str());
+  }
+  else if(argc == 3){
     int numFiles = atoi(argv[2]);
     std::string filename(argv[1]);
     std::stringstream ss;
@@ -46,7 +51,9 @@ int main(int argc, char **argv){
     }
   }
   else{
-    std::cout << "Usage: ./extractFeatures folder/filename numFiles" << std::endl;
+    std::cout << "Usage for single file: ./extractFeatures filename" << std::endl;
+    std::cout << "or" << std::endl;
+    std::cout << "Usage for multiple files: ./extractFeatures folder/filename numFiles" << std::endl;
     std::cout << "Note: folder/filename should not include spaces (' ') or the file extension ('.wav')." << std::endl;
   }
   exit(EXIT_SUCCESS);
@@ -56,22 +63,20 @@ int main(int argc, char **argv){
 // Extract Features
 ////////////////////////////////////////////////////////////////////////////////
 void extractFeatures(int argc, char **argv, const char* filename){
-//    findCudaDevice(argc, (const char **)argv);
-
     SNDFILE *waveFile;
     SF_INFO info;
     int signal_size, num_items;
     int *wave;
     int f,sr,c;
 
-    /* Open the WAV file. */
+    // Open the WAV file.
     info.format = 0;
     waveFile = sf_open(filename,SFM_READ,&info);
     if (waveFile == NULL){
         printf("Failed to open the file.\n");
         exit(-1);
     }
-    /* Print some of the info, and figure out how much data to read. */
+    // Print some of the info, and figure out how much data to read.
     f = info.frames;
     sr = info.samplerate;
     c = info.channels;
@@ -79,16 +84,11 @@ void extractFeatures(int argc, char **argv, const char* filename){
       printf("Error: file %s is not a mono wav file.\n", filename);
       exit(-1);
     }
-//    printf("frames=%d\n",f);
-//    printf("samplerate=%d\n",sr);
-//    printf("channels=%d\n",c);
     num_items = f*c;
-//    printf("num_items=%d\n",num_items);
-    /* Allocate space for the data to be read, then read it. */
+    // Allocate space for the data to be read, then read it.
     wave = (int *) malloc(num_items*sizeof(int));
     signal_size = sf_read_int(waveFile,wave,num_items);
     sf_close(waveFile);
-//    printf("Read %d items\n",signal_size);
 
     // Allocate host memory for the signal
     int mem_size = sizeof(Complex) * signal_size;
@@ -101,29 +101,6 @@ void extractFeatures(int argc, char **argv, const char* filename){
       val.y = 0;
       h_signal[k] = val;
     }
-
-
-/*
-    // FFTW3 FFT
-    fftw_complex *in, *out;
-    fftw_plan p;
-
-    in = (fftw_complex*) fftw_malloc(sizeof(fftw_complex)*signal_size);
-    out = (fftw_complex*) fftw_malloc(sizeof(fftw_complex)*signal_size);
-
-    for(int k = 0; k < signal_size; k++){
-      in[k][0] = (double)wave[k];
-      in[k][1] = 0;
-    }
-
-    p = fftw_plan_dft_1d(signal_size, in, out, FFTW_FORWARD, FFTW_ESTIMATE);
-    fftw_execute(p);
-
-    fftw_destroy_plan(p);
-    fftw_free(in);
-    fftw_free(out);
-*/
-
 
     // CUDA FFT
     // Allocate device memory for signal
@@ -251,7 +228,6 @@ void extractFeatures(int argc, char **argv, const char* filename){
       SRFsum += srf;
     }
 
-
     // calculate min and max frequencies (at certain a certain threshold)
     float logFFT = 0;
 
@@ -298,41 +274,83 @@ void extractFeatures(int argc, char **argv, const char* filename){
 //    std::cout << SCsum <<","<< BWsum <<","<< SRFavg <<","<< SFavg <<","<< zcr <<","<< minf <<","<< maxf << std::endl;
 //    printf("\n");
 
-    // create queue of feature values to be saved
-    std::ofstream datafile;
-    datafile.open("TrainingData.csv", std::ofstream::app);
-    datafile << SCsum <<","<< BWsum <<","<< SRFavg <<","<< SFavg <<","<< zcr <<","<< minf <<","<< maxf <<"\n";
-    datafile.close();
+    // output data
+    if(argc == 2){
+      std::string trainingname(argv[1]);
+      trainingname += "Training.csv";
+      std::ofstream datafile;
+      datafile.open(trainingname.c_str(), std::ofstream::app);
+      datafile << SCsum <<","<< BWsum <<","<< SRFavg <<","<< SFavg <<","<< zcr <<","<< minf <<","<< maxf <<"\n";
+      datafile.close();
 
-    // create the label
-    std::ofstream labelfile;
-    labelfile.open("TrainingLabels.csv", std::ofstream::app);
-    std::string name = filename;
-    if(name.find("AC/") != std::string::npos){
-      labelfile << 1 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 0 <<"\n";
+      // create the label
+      std::string labelname(argv[1]);
+      labelname += "Label.csv";
+      std::ofstream labelfile;
+      labelfile.open(labelname.c_str(), std::ofstream::app);
+      std::string name = filename;
+      if(name.find("AC") != std::string::npos){
+        labelfile << 1 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 0 <<"\n";
+      }
+      else if(name.find("AK") != std::string::npos){
+        labelfile << 0 <<","<< 1 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 0 <<"\n";
+      }
+      else if(name.find("AYW") != std::string::npos){
+        labelfile << 0 <<","<< 0 <<","<< 1 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 0 <<"\n";
+      }
+      else if(name.find("BJ") != std::string::npos){
+        labelfile << 0 <<","<< 0 <<","<< 0 <<","<< 1 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 0 <<"\n";
+      }
+      else if(name.find("CG") != std::string::npos){
+        labelfile << 0 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 1 <<","<< 0 <<","<< 0 <<","<< 0 <<"\n";
+      }
+      else if(name.find("GC") != std::string::npos){
+        labelfile << 0 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 1 <<","<< 0 <<","<< 0 <<"\n";
+      }
+      else if(name.find("GWT") != std::string::npos){
+        labelfile << 0 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 1 <<","<< 0 <<"\n";
+      }
+      else if(name.find("NC") != std::string::npos){
+        labelfile << 0 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 1 <<"\n";
+      }
+      labelfile.close();
     }
-    else if(name.find("AK/") != std::string::npos){
-      labelfile << 0 <<","<< 1 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 0 <<"\n";
+    else{
+      std::ofstream datafile;
+      datafile.open("TrainingData.csv", std::ofstream::app);
+      datafile << SCsum <<","<< BWsum <<","<< SRFavg <<","<< SFavg <<","<< zcr <<","<< minf <<","<< maxf <<"\n";
+      datafile.close();
+
+      // create the label
+      std::ofstream labelfile;
+      labelfile.open("TrainingLabels.csv", std::ofstream::app);
+      std::string name = filename;
+      if(name.find("AC/") != std::string::npos){
+        labelfile << 1 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 0 <<"\n";
+      }
+      else if(name.find("AK/") != std::string::npos){
+        labelfile << 0 <<","<< 1 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 0 <<"\n";
+      }
+      else if(name.find("AYW/") != std::string::npos){
+        labelfile << 0 <<","<< 0 <<","<< 1 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 0 <<"\n";
+      }
+      else if(name.find("BJ/") != std::string::npos){
+        labelfile << 0 <<","<< 0 <<","<< 0 <<","<< 1 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 0 <<"\n";
+      }
+      else if(name.find("CG/") != std::string::npos){
+        labelfile << 0 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 1 <<","<< 0 <<","<< 0 <<","<< 0 <<"\n";
+      }
+      else if(name.find("GC/") != std::string::npos){
+        labelfile << 0 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 1 <<","<< 0 <<","<< 0 <<"\n";
+      }
+      else if(name.find("GWT/") != std::string::npos){
+        labelfile << 0 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 1 <<","<< 0 <<"\n";
+      }
+      else if(name.find("NC/") != std::string::npos){
+        labelfile << 0 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 1 <<"\n";
+      }
+      labelfile.close();
     }
-    else if(name.find("AYW/") != std::string::npos){
-      labelfile << 0 <<","<< 0 <<","<< 1 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 0 <<"\n";
-    }
-    else if(name.find("BJ/") != std::string::npos){
-      labelfile << 0 <<","<< 0 <<","<< 0 <<","<< 1 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 0 <<"\n";
-    }
-    else if(name.find("CG/") != std::string::npos){
-      labelfile << 0 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 1 <<","<< 0 <<","<< 0 <<","<< 0 <<"\n";
-    }
-    else if(name.find("GC/") != std::string::npos){
-      labelfile << 0 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 1 <<","<< 0 <<","<< 0 <<"\n";
-    }
-    else if(name.find("GWT/") != std::string::npos){
-      labelfile << 0 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 1 <<","<< 0 <<"\n";
-    }
-    else if(name.find("NC/") != std::string::npos){
-      labelfile << 0 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 1 <<"\n";
-    }
-    labelfile.close();
 
     // cleanup memory
     free(wave);
