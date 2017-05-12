@@ -287,6 +287,7 @@ void extractFeatures(int argc, char **argv, const char* filename){
       std::ofstream labelfile;
       labelfile.open(labelname.c_str(), std::ofstream::app);
       std::string name = filename;
+      // LABELFILE statements
       if(name.find("AC") != std::string::npos){
         labelfile << 1 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 0 <<"\n";
       }
@@ -323,6 +324,7 @@ void extractFeatures(int argc, char **argv, const char* filename){
       std::ofstream labelfile;
       labelfile.open("TrainingLabels.csv", std::ofstream::app);
       std::string name = filename;
+      // LABELFILE statements
       if(name.find("AC") != std::string::npos){
         labelfile << 1 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 0 <<","<< 0 <<"\n";
       }
