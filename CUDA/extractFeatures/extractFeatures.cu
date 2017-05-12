@@ -128,7 +128,7 @@ void extractFeatures(int argc, char **argv, const char* filename){
     fft_signal_size = signal_size/2;
     float freq = static_cast<float>(sr)/static_cast<float>(signal_size); // frequency per index of array
     signal_time = static_cast<float>(signal_size) / static_cast<float>(sr);
-    frame_length = 0.005; // vary this value
+    frame_length = 0.002;
     num_frames = signal_time/(2*frame_length);
     num_frames = static_cast<int>(num_frames)+1;
     frame_size = (int)(signal_size/(2*num_frames));
@@ -232,7 +232,7 @@ void extractFeatures(int argc, char **argv, const char* filename){
     float maxf = 0;
     float minf = fft_signal_size;
     int s = 300/freq; // should only begin computing min/max at 300 Hz, ignore earlier values as they are most likely noise (should probably vary this value too)
-    int threshold = -10; // vary this value
+    int threshold = -6;
     for(int i = s; i < fft_signal_size; i++){
       logFFT = 10*(log10(absComplex(h_signal[i])/maxFFT));
       if(logFFT > threshold && i < minf){
