@@ -16,16 +16,14 @@
 #include <helper_functions.h>
 #include <helper_cuda.h>
 
-// includes for FFTW
-//#include <fftw3.h>
-
 #include <sndfile.h>
 
 // Complex data type
 typedef float2 Complex;
 
 ////////////////////////////////////////////////////////////////////////////////
-// declaration, forward
+// Function Declarations
+////////////////////////////////////////////////////////////////////////////////
 void extractFeatures(int argc, char **argv, const char* filename);
 float absComplex(Complex n);
 
@@ -357,7 +355,9 @@ void extractFeatures(int argc, char **argv, const char* filename){
     free(h_signal);
     checkCudaErrors(cudaFree(d_signal));
 }
-
+////////////////////////////////////////////////////////////////////////////////
+// absComplex
+////////////////////////////////////////////////////////////////////////////////
 float absComplex(Complex n){
   float ret = 0;
   ret = sqrt(pow(n.x, 2) + pow(n.y, 2));
