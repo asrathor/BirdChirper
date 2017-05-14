@@ -52,7 +52,7 @@ int main(int argc, char **argv){
     std::cout << "Usage for single file: ./extractFeatures filename" << std::endl;
     std::cout << "or" << std::endl;
     std::cout << "Usage for multiple files: ./extractFeatures folder/filename numFiles" << std::endl;
-    std::cout << "Note: folder/filename should not include spaces (' ') or the file extension ('.wav')." << std::endl;
+    std::cout << "Note: folder/filename should not include spaces (' ') or the file extension ('.wav'). For more details please consult the user manual and or documentation." << std::endl;
   }
   exit(EXIT_SUCCESS);
 }
