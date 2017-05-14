@@ -231,7 +231,7 @@ void extractFeatures(int argc, char **argv, const char* filename){
 
     float maxf = 0;
     float minf = fft_signal_size;
-    int s = 300/freq; // should only begin computing min/max at 300 Hz, ignore earlier values as they are most likely noise (should probably vary this value too)
+    int s = 300/freq; // should only begin computing min/max at 300 Hz, ignore earlier values as they are most likely noise
     int threshold = -6;
     for(int i = s; i < fft_signal_size; i++){
       logFFT = 10*(log10(absComplex(h_signal[i])/maxFFT));
