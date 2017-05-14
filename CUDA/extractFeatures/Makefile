@@ -196,7 +196,6 @@ ALL_CCFLAGS += $(EXTRA_NVCCFLAGS)
 ALL_CCFLAGS += $(addprefix -Xcompiler ,$(CCFLAGS))
 ALL_CCFLAGS += $(addprefix -Xcompiler ,$(EXTRA_CCFLAGS))
 ALL_CCFLAGS += -lsndfile
-#ALL_CCFLAGS += -lfftw3 -lm
 
 SAMPLE_ENABLED := 1
 
