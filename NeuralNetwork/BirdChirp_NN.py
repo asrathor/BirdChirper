@@ -17,13 +17,18 @@ def import_data(DataFile, LabelFile, seed, split_by_train=True, split=10, split_
     train_data = np.genfromtxt(DataFile, delimiter= ",")
     train_label = np.genfromtxt(LabelFile, delimiter= ",")
 
-    train_data, train_label = shuffle(train_data, train_label, random_state=seed)
+    if(np.ndim(train_data) > 1):
+        train_data, train_label = shuffle(train_data, train_label, random_state=seed)
+    else:
+        train_data = np.matrix(train_data)
+        train_label = np.matrix(train_label)
 
     if split_data == False:
         return train_data, train_label
 
     test_data = np.zeros((1,train_data.shape[1]))
     test_label = np.zeros((1,train_label.shape[1]))
+
 
     labels, count = np.unique(np.argmax(train_label, axis=1),return_counts=True)
 
@@ -199,9 +204,6 @@ def Train_NN(max_epochs, n_hidden, DataFile, LabelFile, seed, learning_rate, sho
     # Print accuracy for each bird in training data
     print "\nTraining Data:\n"
     print "Training Accuracy: ", np.mean(np.argmax(train_label, axis=1) == sess.run(predict, feed_dict={x: train_data, y_: train_label}))*100
-    with open('LearningRate.csv', 'a') as outputfile:
-        writer = csv.writer(outputfile)
-        writer.writerow([np.mean(np.argmax(train_label, axis=1) == sess.run(predict, feed_dict={x: train_data, y_: train_label}))*100])
     temp = 0
     for label in trainlabels:
         correctpred = 0
@@ -211,19 +213,6 @@ def Train_NN(max_epochs, n_hidden, DataFile, LabelFile, seed, learning_rate, sho
                 correctpred += 1
         print "%s Accuracy: %.2f%% with %i samples" % (str(bird_label[0][label]), 100 * correctpred / traincounts[temp], traincounts[temp])
         temp += 1
-
-
-    # Output the predicted labels and true labels to an output file
-    with open('Predictions.csv', 'w') as outputfile:
-        writer = csv.writer(outputfile)
-        writer.writerow(['Training Data'])
-        writer.writerow(traintruelabels.flatten())
-        writer.writerow(trainpredlabels.flatten())
-        if train_all == False:
-            writer.writerow(['Testing Data\n'])
-            writer.writerow(truelabels.flatten())
-            writer.writerow(predlabels.flatten())
-    outputfile.close()
 
     sess.close()
 
@@ -246,9 +235,17 @@ def Test_NN(weights, DataFile, LabelFile, seed):
     sess = tf.Session(config=tf.ConfigProto(log_device_placement=True))
     sess.run(init)
 
-    print sess.run(predict, feed_dict={x: test_data, y: test_label})
-    print np.argmax(test_label, axis=1)
-    print "Accuracy:", np.mean(np.argmax(test_label, axis=1) == sess.run(predict, feed_dict={x: test_data, y: test_label}))*100
+    # Bird labels
+    bird_label = np.genfromtxt('BirdLabel.csv', dtype="S", delimiter=",")[np.newaxis, :]
+
+
+    predlabels = np.matrix(sess.run(predict, feed_dict={x: test_data, y: test_label}))
+
+    # print np.argmax(test_label, axis=1)
+    # print "Accuracy:", np.mean(np.argmax(test_label, axis=1) == sess.run(predict, feed_dict={x: test_data, y: test_label}))*100
+
+    for item in predlabels[0]:
+        print "Predicted Bird: %s" % (str(bird_label[0][item]))
     sess.close()
 
 
