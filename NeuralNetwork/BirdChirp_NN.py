@@ -61,11 +61,6 @@ def import_data(DataFile, LabelFile, seed, split_by_train=True, split=10, split_
     # else:
     #     return train_data, train_label
 
-def shuffle_in_unison(a, b):
-    assert len(a) == len(b)
-    p = np.random.permutation(len(a))
-    return a[p], b[p]
-
 def init_weights(shape):
     # Weight initialization
     weights = tf.random_normal(shape, stddev=0.1)
@@ -144,7 +139,7 @@ def Train_NN(max_epochs, n_hidden, DataFile, LabelFile, seed, learning_rate, sho
     print "Begin Optimization"
 
     for epoch in range(max_epochs):
-       shuffled_data, shuffled_label = shuffle_in_unison(train_data, train_label)
+       shuffled_data, shuffled_label = shuffle(train_data, train_label)
        sess.run(train_step, feed_dict={x: shuffled_data, y_: shuffled_label})
        if show_accuracy:
            current_accuracy = np.mean(np.argmax(train_label, axis=1) ==
